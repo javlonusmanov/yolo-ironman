@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9637B7C1A13DFFB000F2D42 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9637B7B1A13DFFB000F2D42 /* Person.swift */; };
+		D9637B7E1A13E005000F2D42 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9637B7D1A13E005000F2D42 /* Location.swift */; };
 		D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */; };
 		D969A61A1A13D1DF005FFAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6191A13D1DF005FFAD0 /* ViewController.swift */; };
 		D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D969A61B1A13D1DF005FFAD0 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9637B7B1A13DFFB000F2D42 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		D9637B7D1A13E005000F2D42 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D9637B7F1A13E017000F2D42 /* PinPoint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinPoint-Bridging-Header.h"; sourceTree = "<group>"; };
 		D969A6121A13D1DF005FFAD0 /* PinPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A6161A13D1DF005FFAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,9 +64,11 @@
 		D969A6091A13D1DE005FFAD0 = {
 			isa = PBXGroup;
 			children = (
+				D9637B7D1A13E005000F2D42 /* Location.swift */,
 				D969A6141A13D1DF005FFAD0 /* PinPoint */,
 				D969A62A1A13D1DF005FFAD0 /* PinPointTests */,
 				D969A6131A13D1DF005FFAD0 /* Products */,
+				D9637B7F1A13E017000F2D42 /* PinPoint-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +90,7 @@
 				D969A61E1A13D1DF005FFAD0 /* Images.xcassets */,
 				D969A6201A13D1DF005FFAD0 /* LaunchScreen.xib */,
 				D969A6151A13D1DF005FFAD0 /* Supporting Files */,
+				D9637B7B1A13DFFB000F2D42 /* Person.swift */,
 			);
 			path = PinPoint;
 			sourceTree = "<group>";
@@ -213,7 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9637B7C1A13DFFB000F2D42 /* Person.swift in Sources */,
 				D969A61A1A13D1DF005FFAD0 /* ViewController.swift in Sources */,
+				D9637B7E1A13E005000F2D42 /* Location.swift in Sources */,
 				D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,9 +349,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PinPoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -349,9 +362,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = PinPoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -408,6 +423,7 @@
 				D969A6331A13D1DF005FFAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D969A6341A13D1DF005FFAD0 /* Build configuration list for PBXNativeTarget "PinPointTests" */ = {
 			isa = XCConfigurationList;
@@ -416,6 +432,7 @@
 				D969A6361A13D1DF005FFAD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
