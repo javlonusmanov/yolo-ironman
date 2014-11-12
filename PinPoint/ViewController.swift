@@ -13,6 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var object = PFObject(className: "TestClass")
+        object.addObject("Banana", forKey: "favoriteFood")
+        object.addObject("Chocolate", forKey: "favoriteIceCream")
+        object.saveEventually()
+        
+        var object1 = PFObject(className: "TestClass")
+        object1.addObject("Chuchvara", forKey: "favoriteFood")
+        object1.addObject("Chocolate", forKey: "favoriteIceCream")
+        object1.saveEventually()
     }
 
     override func didReceiveMemoryWarning() {
