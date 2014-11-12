@@ -1,0 +1,275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D96F964119DBAD4C00EA747D /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D96F964019DBAD4C00EA747D /* CoreFoundation.framework */; };
+		D96F964819DBAD4C00EA747D /* cplusplusPractice.h in Headers */ = {isa = PBXBuildFile; fileRef = D96F964719DBAD4C00EA747D /* cplusplusPractice.h */; };
+		D96F964A19DBAD4C00EA747D /* cplusplusPracticePriv.h in Headers */ = {isa = PBXBuildFile; fileRef = D96F964919DBAD4C00EA747D /* cplusplusPracticePriv.h */; };
+		D96F964C19DBAD4C00EA747D /* cplusplusPractice.cp in Sources */ = {isa = PBXBuildFile; fileRef = D96F964B19DBAD4C00EA747D /* cplusplusPractice.cp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D96F963D19DBAD4C00EA747D /* cplusplusPractice.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cplusplusPractice.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96F964019DBAD4C00EA747D /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D96F964419DBAD4C00EA747D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96F964519DBAD4C00EA747D /* cplusplusPracticeProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = cplusplusPracticeProj.xcconfig; sourceTree = "<group>"; };
+		D96F964619DBAD4C00EA747D /* cplusplusPracticeTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = cplusplusPracticeTarget.xcconfig; sourceTree = "<group>"; };
+		D96F964719DBAD4C00EA747D /* cplusplusPractice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cplusplusPractice.h; sourceTree = "<group>"; };
+		D96F964919DBAD4C00EA747D /* cplusplusPracticePriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cplusplusPracticePriv.h; sourceTree = "<group>"; };
+		D96F964B19DBAD4C00EA747D /* cplusplusPractice.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cplusplusPractice.cp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D96F963A19DBAD4C00EA747D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96F964119DBAD4C00EA747D /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D96F963419DBAD4C00EA747D = {
+			isa = PBXGroup;
+			children = (
+				D96F964219DBAD4C00EA747D /* cplusplusPractice */,
+				D96F963F19DBAD4C00EA747D /* Frameworks */,
+				D96F963E19DBAD4C00EA747D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D96F963E19DBAD4C00EA747D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D96F963D19DBAD4C00EA747D /* cplusplusPractice.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D96F963F19DBAD4C00EA747D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D96F964019DBAD4C00EA747D /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D96F964219DBAD4C00EA747D /* cplusplusPractice */ = {
+			isa = PBXGroup;
+			children = (
+				D96F964519DBAD4C00EA747D /* cplusplusPracticeProj.xcconfig */,
+				D96F964619DBAD4C00EA747D /* cplusplusPracticeTarget.xcconfig */,
+				D96F964719DBAD4C00EA747D /* cplusplusPractice.h */,
+				D96F964919DBAD4C00EA747D /* cplusplusPracticePriv.h */,
+				D96F964B19DBAD4C00EA747D /* cplusplusPractice.cp */,
+				D96F964319DBAD4C00EA747D /* Supporting Files */,
+			);
+			path = cplusplusPractice;
+			sourceTree = "<group>";
+		};
+		D96F964319DBAD4C00EA747D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D96F964419DBAD4C00EA747D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D96F963B19DBAD4C00EA747D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96F964A19DBAD4C00EA747D /* cplusplusPracticePriv.h in Headers */,
+				D96F964819DBAD4C00EA747D /* cplusplusPractice.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D96F963C19DBAD4C00EA747D /* cplusplusPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D96F964F19DBAD4C00EA747D /* Build configuration list for PBXNativeTarget "cplusplusPractice" */;
+			buildPhases = (
+				D96F963919DBAD4C00EA747D /* Sources */,
+				D96F963A19DBAD4C00EA747D /* Frameworks */,
+				D96F963B19DBAD4C00EA747D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cplusplusPractice;
+			productName = cplusplusPractice;
+			productReference = D96F963D19DBAD4C00EA747D /* cplusplusPractice.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D96F963519DBAD4C00EA747D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Javlon Usmanov";
+				TargetAttributes = {
+					D96F963C19DBAD4C00EA747D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = D96F963819DBAD4C00EA747D /* Build configuration list for PBXProject "cplusplusPractice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D96F963419DBAD4C00EA747D;
+			productRefGroup = D96F963E19DBAD4C00EA747D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D96F963C19DBAD4C00EA747D /* cplusplusPractice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D96F963919DBAD4C00EA747D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96F964C19DBAD4C00EA747D /* cplusplusPractice.cp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D96F964D19DBAD4C00EA747D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D96F964E19DBAD4C00EA747D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D96F965019DBAD4C00EA747D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = cplusplusPractice/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D96F965119DBAD4C00EA747D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = cplusplusPractice/Info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D96F963819DBAD4C00EA747D /* Build configuration list for PBXProject "cplusplusPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96F964D19DBAD4C00EA747D /* Debug */,
+				D96F964E19DBAD4C00EA747D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D96F964F19DBAD4C00EA747D /* Build configuration list for PBXNativeTarget "cplusplusPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D96F965019DBAD4C00EA747D /* Debug */,
+				D96F965119DBAD4C00EA747D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D96F963519DBAD4C00EA747D /* Project object */;
+}
