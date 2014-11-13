@@ -15,20 +15,31 @@
 		D902475D1A1416AE00C40766 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D902475C1A1416AE00C40766 /* MobileCoreServices.framework */; };
 		D902475F1A1416B300C40766 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D902475E1A1416B300C40766 /* QuartzCore.framework */; };
 		D90247611A1416BA00C40766 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247601A1416BA00C40766 /* Security.framework */; };
-		D90247631A1416BF00C40766 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247621A1416BF00C40766 /* StoreKit.framework */; };
 		D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247641A1416CA00C40766 /* SystemConfiguration.framework */; };
 		D902476A1A1416D800C40766 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247661A1416D700C40766 /* Bolts.framework */; };
 		D902476B1A1416D800C40766 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247671A1416D800C40766 /* Parse.framework */; };
-		D902476C1A1416D800C40766 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247681A1416D800C40766 /* ParseFacebookUtils.framework */; };
 		D902476D1A1416D800C40766 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247691A1416D800C40766 /* ParseUI.framework */; };
+		D93433C31A1465E200111D59 /* icon_me.png in Resources */ = {isa = PBXBuildFile; fileRef = D93433C21A1465E200111D59 /* icon_me.png */; };
+		D93433C51A146D2600111D59 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93433C41A146D2500111D59 /* TypesTableViewController.swift */; };
 		D9637B7C1A13DFFB000F2D42 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9637B7B1A13DFFB000F2D42 /* Person.swift */; };
-		D9637B7E1A13E005000F2D42 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9637B7D1A13E005000F2D42 /* Location.swift */; };
 		D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */; };
 		D969A61A1A13D1DF005FFAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6191A13D1DF005FFAD0 /* ViewController.swift */; };
 		D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D969A61B1A13D1DF005FFAD0 /* Main.storyboard */; };
 		D969A61F1A13D1DF005FFAD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D969A61E1A13D1DF005FFAD0 /* Images.xcassets */; };
 		D969A6221A13D1DF005FFAD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D969A6201A13D1DF005FFAD0 /* LaunchScreen.xib */; };
 		D969A62E1A13D1DF005FFAD0 /* PinPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A62D1A13D1DF005FFAD0 /* PinPointTests.swift */; };
+		D9D8AD9E1A14530E00798F3B /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8AD9D1A14530E00798F3B /* GoogleMaps.framework */; };
+		D9D8ADA11A14533D00798F3B /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9D8ADA01A14533D00798F3B /* GoogleMaps.bundle */; };
+		D9D8ADA61A14553D00798F3B /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8ADA51A14553D00798F3B /* GoogleDataProvider.swift */; };
+		D9D8ADA81A14562000798F3B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADA71A14562000798F3B /* AVFoundation.framework */; };
+		D9D8ADAA1A14562A00798F3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADA91A14562A00798F3B /* CoreData.framework */; };
+		D9D8ADAC1A14564300798F3B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADAB1A14564300798F3B /* CoreText.framework */; };
+		D9D8ADAE1A14564D00798F3B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADAD1A14564D00798F3B /* GLKit.framework */; };
+		D9D8ADB01A14565500798F3B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADAF1A14565500798F3B /* ImageIO.framework */; };
+		D9D8ADB21A14566200798F3B /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADB11A14566200798F3B /* libc++.dylib */; };
+		D9D8ADB41A14566E00798F3B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADB31A14566E00798F3B /* libicucore.dylib */; };
+		D9D8ADB61A14567A00798F3B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADB51A14567A00798F3B /* OpenGLES.framework */; };
+		D9D8ADB81A1457A200798F3B /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8ADB71A1457A200798F3B /* GooglePlace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,14 +61,13 @@
 		D902475C1A1416AE00C40766 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D902475E1A1416B300C40766 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D90247601A1416BA00C40766 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		D90247621A1416BF00C40766 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D90247641A1416CA00C40766 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D90247661A1416D700C40766 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		D90247671A1416D800C40766 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Downloads/parse-library-1/Parse.framework"; sourceTree = "<group>"; };
-		D90247681A1416D800C40766 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
 		D90247691A1416D800C40766 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Downloads/parse-library-1/ParseUI.framework"; sourceTree = "<group>"; };
+		D93433C21A1465E200111D59 /* icon_me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_me.png; sourceTree = "<group>"; };
+		D93433C41A146D2500111D59 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		D9637B7B1A13DFFB000F2D42 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		D9637B7D1A13E005000F2D42 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D9637B7F1A13E017000F2D42 /* PinPoint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinPoint-Bridging-Header.h"; sourceTree = "<group>"; };
 		D969A6121A13D1DF005FFAD0 /* PinPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A6161A13D1DF005FFAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +79,18 @@
 		D969A6271A13D1DF005FFAD0 /* PinPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A62C1A13D1DF005FFAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D969A62D1A13D1DF005FFAD0 /* PinPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPointTests.swift; sourceTree = "<group>"; };
+		D9D8AD9D1A14530E00798F3B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../../Downloads/GoogleMaps-iOS-1.9.0/GoogleMaps.framework"; sourceTree = "<group>"; };
+		D9D8ADA01A14533D00798F3B /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
+		D9D8ADA51A14553D00798F3B /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		D9D8ADA71A14562000798F3B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D9D8ADA91A14562A00798F3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D9D8ADAB1A14564300798F3B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		D9D8ADAD1A14564D00798F3B /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		D9D8ADAF1A14565500798F3B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D9D8ADB11A14566200798F3B /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		D9D8ADB31A14566E00798F3B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		D9D8ADB51A14567A00798F3B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D9D8ADB71A1457A200798F3B /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,17 +98,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */,
+				D902475F1A1416B300C40766 /* QuartzCore.framework in Frameworks */,
+				D9D8ADB61A14567A00798F3B /* OpenGLES.framework in Frameworks */,
+				D9D8ADB41A14566E00798F3B /* libicucore.dylib in Frameworks */,
+				D9D8ADB21A14566200798F3B /* libc++.dylib in Frameworks */,
+				D9D8ADB01A14565500798F3B /* ImageIO.framework in Frameworks */,
+				D9D8ADAE1A14564D00798F3B /* GLKit.framework in Frameworks */,
+				D9D8ADAC1A14564300798F3B /* CoreText.framework in Frameworks */,
+				D90247591A1416A100C40766 /* CoreLocation.framework in Frameworks */,
+				D9D8ADAA1A14562A00798F3B /* CoreData.framework in Frameworks */,
+				D9D8ADA81A14562000798F3B /* AVFoundation.framework in Frameworks */,
+				D9D8AD9E1A14530E00798F3B /* GoogleMaps.framework in Frameworks */,
 				D902476A1A1416D800C40766 /* Bolts.framework in Frameworks */,
 				D902476B1A1416D800C40766 /* Parse.framework in Frameworks */,
-				D902476C1A1416D800C40766 /* ParseFacebookUtils.framework in Frameworks */,
 				D902476D1A1416D800C40766 /* ParseUI.framework in Frameworks */,
-				D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */,
-				D90247631A1416BF00C40766 /* StoreKit.framework in Frameworks */,
 				D90247611A1416BA00C40766 /* Security.framework in Frameworks */,
-				D902475F1A1416B300C40766 /* QuartzCore.framework in Frameworks */,
 				D902475D1A1416AE00C40766 /* MobileCoreServices.framework in Frameworks */,
 				D902475B1A1416A900C40766 /* libz.dylib in Frameworks */,
-				D90247591A1416A100C40766 /* CoreLocation.framework in Frameworks */,
 				D90247571A14169A00C40766 /* CoreGraphics.framework in Frameworks */,
 				D90247551A14169200C40766 /* CFNetwork.framework in Frameworks */,
 				D90247531A14168C00C40766 /* AudioToolbox.framework in Frameworks */,
@@ -106,24 +135,10 @@
 		D969A6091A13D1DE005FFAD0 = {
 			isa = PBXGroup;
 			children = (
-				D90247661A1416D700C40766 /* Bolts.framework */,
-				D90247671A1416D800C40766 /* Parse.framework */,
-				D90247681A1416D800C40766 /* ParseFacebookUtils.framework */,
-				D90247691A1416D800C40766 /* ParseUI.framework */,
-				D90247641A1416CA00C40766 /* SystemConfiguration.framework */,
-				D90247621A1416BF00C40766 /* StoreKit.framework */,
-				D90247601A1416BA00C40766 /* Security.framework */,
-				D902475E1A1416B300C40766 /* QuartzCore.framework */,
-				D902475C1A1416AE00C40766 /* MobileCoreServices.framework */,
-				D902475A1A1416A900C40766 /* libz.dylib */,
-				D90247581A1416A100C40766 /* CoreLocation.framework */,
-				D90247561A14169A00C40766 /* CoreGraphics.framework */,
-				D90247541A14169200C40766 /* CFNetwork.framework */,
-				D90247521A14168C00C40766 /* AudioToolbox.framework */,
-				D9637B7D1A13E005000F2D42 /* Location.swift */,
 				D969A6141A13D1DF005FFAD0 /* PinPoint */,
 				D969A62A1A13D1DF005FFAD0 /* PinPointTests */,
 				D969A6131A13D1DF005FFAD0 /* Products */,
+				D9D8AD9F1A14532400798F3B /* Frameworks */,
 				D9637B7F1A13E017000F2D42 /* PinPoint-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
@@ -140,9 +155,11 @@
 		D969A6141A13D1DF005FFAD0 /* PinPoint */ = {
 			isa = PBXGroup;
 			children = (
+				D9D8ADA41A1454FC00798F3B /* Views */,
+				D9D8ADA31A1454F100798F3B /* Model */,
+				D9D8ADA21A1454E200798F3B /* Controllers */,
 				D9637B7B1A13DFFB000F2D42 /* Person.swift */,
 				D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */,
-				D969A6191A13D1DF005FFAD0 /* ViewController.swift */,
 				D969A61B1A13D1DF005FFAD0 /* Main.storyboard */,
 				D969A61E1A13D1DF005FFAD0 /* Images.xcassets */,
 				D969A6201A13D1DF005FFAD0 /* LaunchScreen.xib */,
@@ -154,6 +171,7 @@
 		D969A6151A13D1DF005FFAD0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D93433C21A1465E200111D59 /* icon_me.png */,
 				D969A6161A13D1DF005FFAD0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -174,6 +192,60 @@
 				D969A62C1A13D1DF005FFAD0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9D8AD9F1A14532400798F3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9D8ADB51A14567A00798F3B /* OpenGLES.framework */,
+				D9D8ADB31A14566E00798F3B /* libicucore.dylib */,
+				D9D8ADB11A14566200798F3B /* libc++.dylib */,
+				D9D8ADAF1A14565500798F3B /* ImageIO.framework */,
+				D9D8ADAD1A14564D00798F3B /* GLKit.framework */,
+				D9D8ADAB1A14564300798F3B /* CoreText.framework */,
+				D9D8ADA91A14562A00798F3B /* CoreData.framework */,
+				D9D8ADA71A14562000798F3B /* AVFoundation.framework */,
+				D9D8ADA01A14533D00798F3B /* GoogleMaps.bundle */,
+				D9D8AD9D1A14530E00798F3B /* GoogleMaps.framework */,
+				D90247661A1416D700C40766 /* Bolts.framework */,
+				D90247671A1416D800C40766 /* Parse.framework */,
+				D90247691A1416D800C40766 /* ParseUI.framework */,
+				D90247641A1416CA00C40766 /* SystemConfiguration.framework */,
+				D90247601A1416BA00C40766 /* Security.framework */,
+				D902475E1A1416B300C40766 /* QuartzCore.framework */,
+				D902475C1A1416AE00C40766 /* MobileCoreServices.framework */,
+				D902475A1A1416A900C40766 /* libz.dylib */,
+				D90247581A1416A100C40766 /* CoreLocation.framework */,
+				D90247561A14169A00C40766 /* CoreGraphics.framework */,
+				D90247541A14169200C40766 /* CFNetwork.framework */,
+				D90247521A14168C00C40766 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9D8ADA21A1454E200798F3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D969A6191A13D1DF005FFAD0 /* ViewController.swift */,
+				D93433C41A146D2500111D59 /* TypesTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D9D8ADA31A1454F100798F3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9D8ADA51A14553D00798F3B /* GoogleDataProvider.swift */,
+				D9D8ADB71A1457A200798F3B /* GooglePlace.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D9D8ADA41A1454FC00798F3B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +298,11 @@
 					D969A6111A13D1DE005FFAD0 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = 6QN349HHUB;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					D969A6261A13D1DF005FFAD0 = {
 						CreatedOnToolsVersion = 6.0;
@@ -260,6 +337,8 @@
 				D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */,
 				D969A6221A13D1DF005FFAD0 /* LaunchScreen.xib in Resources */,
 				D969A61F1A13D1DF005FFAD0 /* Images.xcassets in Resources */,
+				D9D8ADA11A14533D00798F3B /* GoogleMaps.bundle in Resources */,
+				D93433C31A1465E200111D59 /* icon_me.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +356,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D8ADA61A14553D00798F3B /* GoogleDataProvider.swift in Sources */,
 				D9637B7C1A13DFFB000F2D42 /* Person.swift in Sources */,
+				D9D8ADB81A1457A200798F3B /* GooglePlace.swift in Sources */,
 				D969A61A1A13D1DF005FFAD0 /* ViewController.swift in Sources */,
-				D9637B7E1A13E005000F2D42 /* Location.swift in Sources */,
 				D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */,
+				D93433C51A146D2600111D59 /* TypesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,13 +487,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/javlonusmanov/Downloads/parse-library-1",
+					"/Users/javlonusmanov/Downloads/GoogleMaps-iOS-1.9.0",
 				);
 				INFOPLIST_FILE = PinPoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -423,13 +510,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/javlonusmanov/Downloads/parse-library-1",
+					"/Users/javlonusmanov/Downloads/GoogleMaps-iOS-1.9.0",
 				);
 				INFOPLIST_FILE = PinPoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint-Bridging-Header.h";
 			};
 			name = Release;

@@ -15,8 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-Gh-xPs" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GwS-Gh-xPs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1f4-ZH-cci"/>
+                            <constraint firstAttribute="bottom" secondItem="GwS-Gh-xPs" secondAttribute="bottom" id="GIO-MG-cbq"/>
+                            <constraint firstItem="GwS-Gh-xPs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dBT-hi-eHg"/>
+                            <constraint firstAttribute="trailing" secondItem="GwS-Gh-xPs" secondAttribute="trailing" id="u9Q-ZL-VLK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="GwS-Gh-xPs" id="rCN-bU-Kju"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
