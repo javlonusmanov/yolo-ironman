@@ -11,9 +11,33 @@ import UIKit
 class ViewController: UIViewController, CLLocationManagerDelegate {
     //UI variables
     @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var questList: UITableView!
+
+    @IBOutlet var questDropButton: UIButton!
+    
+    @IBAction func questDropClicked(sender: UIButton) {
+        if (questList.hidden) {
+        questList.hidden = false
+        animator = UIDynamicAnimator(referenceView: questList)
+        gravity = UIGravityBehavior(items: [questList])
+        animator.addBehavior(gravity)
+        
+        collision = UICollisionBehavior(items: [questList])
+        collision.translatesReferenceBoundsIntoBoundary = true
+        collision.addBoundaryWithIdentifier("questListDropDown", fromPoint: CGPointMake(self.view.frame.origin.x, -273), toPoint: CGPointMake(self.view.frame.origin.x + self.view.frame.width, 0))
+        animator.addBehavior(collision)
+        }
+        else {
+            questList.hidden = true
+        }
+    }
     
     //regular variables
     let locationManager = CLLocationManager()
+    var gravity:UIGravityBehavior!
+    var animator:UIDynamicAnimator!
+    var collision: UICollisionBehavior!
+    
     
     //when the user grants or revokes location permissions.
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -31,10 +55,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }}
 
 
+    @IBAction func sideMenuButton(sender: AnyObject) {
+        toggleSideMenuView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
+        // Do any additional setup after loading the view, typically from a nib.
         locationManager.delegate = self
         self.locationManager.requestWhenInUseAuthorization()
 //        var object = PFObject(className: "TestClass")
