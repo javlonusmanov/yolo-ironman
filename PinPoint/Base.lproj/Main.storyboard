@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -16,25 +16,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tabBar opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-du-rIP">
+                                <rect key="frame" x="0.0" y="556" width="600" height="49"/>
+                                <items>
+                                    <tabBarItem title="Check-In" image="rsz_check.png" id="99R-FZ-LKY"/>
+                                    <tabBarItem title="Share" image="rsz_1591236-share-512.png" id="8tl-A5-5VX"/>
+                                    <tabBarItem systemItem="favorites" id="Vp9-B7-qd4"/>
+                                </items>
+                                <color key="selectedImageTintColor" red="0.92770563350000002" green="1" blue="0.94500656540000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </tabBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gg9-Bt-20a">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Quest List" id="mgf-Zf-wjU"/>
+                                </items>
+                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-Gh-xPs" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GwS-Gh-xPs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1f4-ZH-cci"/>
-                            <constraint firstAttribute="bottom" secondItem="GwS-Gh-xPs" secondAttribute="bottom" id="GIO-MG-cbq"/>
+                            <constraint firstAttribute="bottom" secondItem="GwS-Gh-xPs" secondAttribute="bottom" constant="49" id="GIO-MG-cbq"/>
+                            <constraint firstItem="Gg9-Bt-20a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MbX-Qg-V84"/>
+                            <constraint firstItem="Gg9-Bt-20a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Mhv-ur-RZT"/>
+                            <constraint firstAttribute="trailing" secondItem="Gg9-Bt-20a" secondAttribute="trailing" id="OhH-C3-foE"/>
+                            <constraint firstAttribute="bottom" secondItem="dHa-du-rIP" secondAttribute="bottom" id="Oxt-Po-344"/>
+                            <constraint firstAttribute="trailing" secondItem="dHa-du-rIP" secondAttribute="trailing" id="ZOI-rB-FzQ"/>
                             <constraint firstItem="GwS-Gh-xPs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dBT-hi-eHg"/>
+                            <constraint firstItem="dHa-du-rIP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gIn-eT-ZID"/>
+                            <constraint firstItem="GwS-Gh-xPs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="lLE-av-6UH"/>
                             <constraint firstAttribute="trailing" secondItem="GwS-Gh-xPs" secondAttribute="trailing" id="u9Q-ZL-VLK"/>
                         </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mapView" destination="GwS-Gh-xPs" id="rCN-bU-Kju"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="214" y="388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rsz_1591236-share-512.png" width="30" height="30"/>
+        <image name="rsz_check.png" width="30" height="30"/>
+    </resources>
 </document>
