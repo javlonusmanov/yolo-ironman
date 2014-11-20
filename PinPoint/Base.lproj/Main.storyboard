@@ -1,114 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dr1-FH-QsB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qMn-CD-6gp">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Home Screen-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="hTv-yp-86I">
             <objects>
-                <viewController storyboardIdentifier="ViewControllerMain" title="Home Screen" id="BYZ-38-t0r" customClass="ViewController" customModule="PinPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerMain" id="lJ5-bs-5Ax" customClass="ViewController" customModule="PinPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="oph-MR-mk5"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Di-tj-iX6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="5nj-fc-ccr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-Gh-xPs" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ExO-cf-Ahv" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.94410019160718195" green="1" blue="0.95932747410183616" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <tabBar opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-du-rIP">
-                                <rect key="frame" x="0.0" y="556" width="600" height="49"/>
-                                <color key="backgroundColor" red="0.95686274509803926" green="0.78592651033760907" blue="0.73953705893367505" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <tabBarItem title="Check-In" image="rsz_check.png" id="99R-FZ-LKY"/>
-                                    <tabBarItem title="Share" image="rsz_1591236-share-512.png" id="8tl-A5-5VX"/>
-                                    <tabBarItem systemItem="favorites" id="Vp9-B7-qd4"/>
-                                </items>
-                                <color key="selectedImageTintColor" red="0.92770563350000002" green="1" blue="0.94500656540000005" alpha="1" colorSpace="calibratedRGB"/>
-                            </tabBar>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="questListDropDown" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UQz-Oa-exh" userLabel="questListDropDown">
-                                <rect key="frame" x="0.0" y="64" width="600" height="341"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="WXB-Oo-Bu8">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WXB-Oo-Bu8" id="J1K-8s-dkU">
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                            </tableView>
+                            <view alpha="0.89999999999999991" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eSO-N1-wRO">
+                                <rect key="frame" x="8" y="539" width="583" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyR-lS-XxM">
+                                        <rect key="frame" x="8" y="12" width="567" height="30"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                                        <state key="normal" title="Check-In">
+                                            <color key="titleColor" red="0.94410019160000003" green="1" blue="0.95932747409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="FyR-lS-XxM" secondAttribute="centerY" id="e6M-Qz-RM9"/>
+                                    <constraint firstAttribute="centerX" secondItem="FyR-lS-XxM" secondAttribute="centerX" id="iQq-7i-yza"/>
+                                    <constraint firstAttribute="height" constant="49" id="orB-WY-asE"/>
+                                </constraints>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="GwS-Gh-xPs" secondAttribute="bottom" constant="49" id="GIO-MG-cbq"/>
-                            <constraint firstAttribute="bottom" secondItem="dHa-du-rIP" secondAttribute="bottom" id="Oxt-Po-344"/>
-                            <constraint firstAttribute="trailing" secondItem="dHa-du-rIP" secondAttribute="trailing" id="ZOI-rB-FzQ"/>
-                            <constraint firstItem="GwS-Gh-xPs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dBT-hi-eHg"/>
-                            <constraint firstItem="dHa-du-rIP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gIn-eT-ZID"/>
-                            <constraint firstItem="GwS-Gh-xPs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lLE-av-6UH"/>
-                            <constraint firstAttribute="trailing" secondItem="GwS-Gh-xPs" secondAttribute="trailing" id="u9Q-ZL-VLK"/>
+                            <constraint firstItem="ExO-cf-Ahv" firstAttribute="top" secondItem="oph-MR-mk5" secondAttribute="bottom" id="5EE-fd-NdK"/>
+                            <constraint firstItem="ExO-cf-Ahv" firstAttribute="leading" secondItem="5nj-fc-ccr" secondAttribute="leading" id="5FM-Zf-hQF"/>
+                            <constraint firstAttribute="trailing" secondItem="eSO-N1-wRO" secondAttribute="trailing" constant="7" id="Ddj-3j-sKH"/>
+                            <constraint firstItem="eSO-N1-wRO" firstAttribute="leading" secondItem="5nj-fc-ccr" secondAttribute="leading" constant="7" id="EFN-kq-udq"/>
+                            <constraint firstAttribute="trailing" secondItem="ExO-cf-Ahv" secondAttribute="trailing" id="Fgs-c5-YAy"/>
+                            <constraint firstItem="4Di-tj-iX6" firstAttribute="top" secondItem="eSO-N1-wRO" secondAttribute="bottom" constant="7" id="W4a-XZ-Msk"/>
+                            <constraint firstItem="4Di-tj-iX6" firstAttribute="top" secondItem="ExO-cf-Ahv" secondAttribute="bottom" id="enX-MY-cL4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1UN-2x-glt" colorLabel="IBBuiltInLabel-Orange">
+                    <navigationItem key="navigationItem" id="Eya-hN-g1P">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="hamenu.png" id="qli-gs-Hng">
-                            <inset key="imageInsets" minX="2" minY="8" maxX="-3" maxY="0.0"/>
-                            <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" image="hamenu.png" id="N3G-p9-IDy">
+                            <color key="tintColor" red="0.84114100660000002" green="0.90706939939999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="sideMenuButton:" destination="BYZ-38-t0r" id="JT8-mo-33Z"/>
+                                <action selector="sideMenuButton:" destination="lJ5-bs-5Ax" id="Ggh-iv-cgg"/>
                             </connections>
                         </barButtonItem>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JPS-VI-qJ1">
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k87-XQ-jyp">
                             <rect key="frame" x="180" y="7" width="240" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                             <state key="normal" title="Quests">
+                                <color key="titleColor" red="0.94410019160000003" green="1" blue="0.95932747409999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="questDropClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jjH-EC-HKY"/>
+                                <action selector="questDropClicked:" destination="lJ5-bs-5Ax" eventType="touchUpInside" id="fLw-1u-OiT"/>
                             </connections>
                         </button>
                     </navigationItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="mapView" destination="GwS-Gh-xPs" id="rCN-bU-Kju"/>
-                        <outlet property="questDropButton" destination="JPS-VI-qJ1" id="vMp-PP-Xqv"/>
-                        <outlet property="questList" destination="UQz-Oa-exh" id="kfH-uz-P1N"/>
+                        <outlet property="mapView" destination="ExO-cf-Ahv" id="jfg-pB-87i"/>
+                        <outlet property="questDropButton" destination="k87-XQ-jyp" id="ll2-xb-JMK"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLa-8t-yGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026" y="388"/>
+            <point key="canvasLocation" x="1734" y="1074"/>
         </scene>
-        <!--Home-->
-        <scene sceneID="Imp-Ng-h8y">
+        <!--Navigation Controller-->
+        <scene sceneID="Ivs-sq-yRw">
             <objects>
-                <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="dr1-FH-QsB" customClass="MyNavigationController" customModule="PinPoint" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qMn-CD-6gp" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MRN-k8-ARg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="868-Wt-oZf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="itN-Ha-jub"/>
+                        <segue destination="lJ5-bs-5Ax" kind="relationship" relationship="rootViewController" id="lhj-HA-fDe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xgI-v7-yDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L41-hs-oaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="388"/>
+            <point key="canvasLocation" x="922" y="1074"/>
         </scene>
     </scenes>
     <resources>
         <image name="hamenu.png" width="20" height="20"/>
-        <image name="rsz_1591236-share-512.png" width="30" height="30"/>
-        <image name="rsz_check.png" width="30" height="30"/>
     </resources>
 </document>

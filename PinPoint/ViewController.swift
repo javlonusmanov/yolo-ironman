@@ -12,7 +12,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //UI variables
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var questList: UITableView!
-
+    @IBOutlet weak var popupView: UIView!
+    @IBOutlet weak var popupViewButton: UIButton!
     @IBOutlet var questDropButton: UIButton!
     
     @IBAction func questDropClicked(sender: UIButton) {
@@ -44,7 +45,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if status == .AuthorizedWhenInUse {
             locationManager.startUpdatingLocation()
             mapView.myLocationEnabled = true
-            mapView.settings.myLocationButton = true
+            mapView.settings.myLocationButton = false
         }}
     
     //when the location manager receives new location data.
@@ -64,7 +65,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // Do any additional setup after loading the view, typically from a nib.
         locationManager.delegate = self
+    
         self.locationManager.requestWhenInUseAuthorization()
+        
 //        var object = PFObject(className: "TestClass")
 //        object.addObject("Banana", forKey: "favoriteFood")
 //        object.addObject("Chocolate", forKey: "favoriteIceCream")
