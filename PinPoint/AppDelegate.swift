@@ -18,6 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Parse.setApplicationId("tj53C4nWDml71zQ6EAWCGoiU8BwVbrVp8NXdnRvk", clientKey: "dtMYCLFhXQ3vU5RM5bXsiOD1Jm4P9yWO3xA6zDQc")
         GMSServices.provideAPIKey(googleMapsApiKey)
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let containerViewController = ContainerViewController()
+        window!.rootViewController = containerViewController
+        window!.makeKeyAndVisible()
         return true
     }
 
