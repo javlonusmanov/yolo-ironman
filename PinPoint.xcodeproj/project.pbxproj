@@ -35,6 +35,7 @@
 		D902475F1A1416B300C40766 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D902475E1A1416B300C40766 /* QuartzCore.framework */; };
 		D90247611A1416BA00C40766 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247601A1416BA00C40766 /* Security.framework */; };
 		D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247641A1416CA00C40766 /* SystemConfiguration.framework */; };
+		D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */; };
 		D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */; };
 		D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D969A61B1A13D1DF005FFAD0 /* Main.storyboard */; };
 		D969A61F1A13D1DF005FFAD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D969A61E1A13D1DF005FFAD0 /* Images.xcassets */; };
@@ -90,6 +91,7 @@
 		D902475E1A1416B300C40766 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D90247601A1416BA00C40766 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D90247641A1416CA00C40766 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestViewController.swift; sourceTree = "<group>"; };
 		D969A6121A13D1DF005FFAD0 /* PinPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D969A61C1A13D1DF005FFAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				5D8AB5581A2293DD009DCEC2 /* ContainerViewController.swift */,
 				5D8AB5591A2293DD009DCEC2 /* SidePanelViewController.swift */,
 				5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */,
+				D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				5D8AB5551A2293C1009DCEC2 /* GoogleDataProvider.swift in Sources */,
 				5D8AB5511A22935D009DCEC2 /* UIViewExtensions.swift in Sources */,
 				5D8AB5501A22935D009DCEC2 /* Animal.swift in Sources */,
+				D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */,
 				5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */,
 				5D8AB55C1A2293DD009DCEC2 /* SidePanelViewController.swift in Sources */,
 				5D8AB55B1A2293DD009DCEC2 /* ContainerViewController.swift in Sources */,

@@ -11,7 +11,6 @@ import QuartzCore
 @objc
 protocol ViewControllerDelegate {
     optional func toggleLeftPanel()
-    optional func toggleRightPanel()
     optional func collapseSidePanels()
 }
 
@@ -92,8 +91,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         super.viewDidLoad()
         viewSettings()
         addButton()
-
-        
     }
     
     func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
