@@ -11,7 +11,6 @@ import QuartzCore
 @objc
 protocol ViewControllerDelegate {
     optional func toggleLeftPanel()
-    optional func toggleRightPanel()
     optional func collapseSidePanels()
 }
 
@@ -77,7 +76,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             button.frame = CGRectMake(aaa, 0, 43, 43)
             button.layer.cornerRadius = 5
             button.backgroundColor = UIColor.blackColor()
-            var temp: UIImage = UIImage(named: "hamenu.png")!
+            var temp: UIImage = UIImage(named: "hamenu.png")
             button.setImage(temp, forState: UIControlState.Highlighted)
             button.addTarget(self, action: "pressed:", forControlEvents: UIControlEvents.TouchUpInside)
             button.alpha = 0.85
@@ -92,8 +91,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         super.viewDidLoad()
         viewSettings()
         addButton()
-
-        
     }
     
     func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
