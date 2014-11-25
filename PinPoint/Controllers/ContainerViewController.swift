@@ -46,9 +46,7 @@ class ContainerViewController: UIViewController, ViewControllerDelegate {
     func toggleLeftPanel() {
         let notAlreadyExpanded = (currentState != .LeftPanelExpanded)
         
-        if notAlreadyExpanded {
-            addLeftPanelViewController()
-        }
+        if notAlreadyExpanded {addLeftPanelViewController()}
         
         animateLeftPanel(shouldExpand: notAlreadyExpanded)
     }
@@ -65,7 +63,6 @@ class ContainerViewController: UIViewController, ViewControllerDelegate {
     
     func addChildSidePanelController(sidePanelController: SidePanelViewController) {
         view.insertSubview(sidePanelController.view, atIndex: 0)
-        
         addChildViewController(sidePanelController)
         sidePanelController.didMoveToParentViewController(self)
     }
@@ -119,5 +116,8 @@ private extension UIStoryboard {
     
     class func viewController() -> ViewController? {
         return mainStoryboard().instantiateViewControllerWithIdentifier("viewController") as? ViewController
+    }
+    class func loginViewController() -> LoginViewController? {
+        return mainStoryboard().instantiateViewControllerWithIdentifier("loginViewController") as? LoginViewController
     }
 }

@@ -11,6 +11,7 @@ import QuartzCore
 @objc
 protocol ViewControllerDelegate {
     optional func toggleLeftPanel()
+    optional func toggleRightPanel()
     optional func collapseSidePanels()
 }
 
@@ -27,7 +28,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     let locationManager = CLLocationManager()
     var maskLayer:CALayer = CALayer()
     var delegateSideView:ViewControllerDelegate?
-    
     
     @IBAction func checkIn(sender: UIButton) {
         self.mapView.opaque = true
@@ -84,8 +84,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             aaa = aaa + 55.0
         }
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
