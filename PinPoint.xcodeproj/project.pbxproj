@@ -26,6 +26,7 @@
 		5D8AB5731A2294A0009DCEC2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8AB56E1A2294A0009DCEC2 /* Parse.framework */; };
 		5D8AB5741A2294A0009DCEC2 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8AB56F1A2294A0009DCEC2 /* ParseUI.framework */; };
 		5D8AB57B1A22951C009DCEC2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB57A1A22951C009DCEC2 /* Default-568h@2x.png */; };
+		5DF626241A22AF1900F25227 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF626231A22AF1900F25227 /* Person.swift */; };
 		D90247531A14168C00C40766 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247521A14168C00C40766 /* AudioToolbox.framework */; };
 		D90247551A14169200C40766 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247541A14169200C40766 /* CFNetwork.framework */; };
 		D90247571A14169A00C40766 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247561A14169A00C40766 /* CoreGraphics.framework */; };
@@ -83,6 +84,7 @@
 		5D8AB56F1A2294A0009DCEC2 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = PinPoint/Frameworks/ParseUI.framework; sourceTree = "<group>"; };
 		5D8AB57A1A22951C009DCEC2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5D8AB57E1A229562009DCEC2 /* PinPoint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinPoint-Bridging-Header.h"; sourceTree = "<group>"; };
+		5DF626231A22AF1900F25227 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		D90247521A14168C00C40766 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D90247541A14169200C40766 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D90247561A14169A00C40766 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -165,6 +167,7 @@
 			children = (
 				5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */,
 				5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */,
+				5DF626231A22AF1900F25227 /* Person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */,
 				5D8AB55C1A2293DD009DCEC2 /* SidePanelViewController.swift in Sources */,
 				5D8AB55B1A2293DD009DCEC2 /* ContainerViewController.swift in Sources */,
+				5DF626241A22AF1900F25227 /* Person.swift in Sources */,
 				5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */,
 				D93796271A23922E00570B73 /* LoginViewController.swift in Sources */,
 				D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */,
