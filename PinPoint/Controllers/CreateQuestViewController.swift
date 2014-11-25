@@ -9,21 +9,22 @@
 import Foundation
 
 class CreateQuestViewController : UIViewController {
+  
+  @IBOutlet weak var createQuestTitle: UINavigationItem!
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
+    self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+    self.navigationController?.navigationBar.translucent = false;
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    //Dispose of any resources that can be recreated.
+    //requests access to the user’s location.
     
-    @IBOutlet weak var createQuestTitle: UINavigationItem!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
-        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
-        self.navigationController?.navigationBar.translucent = false;
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        //Dispose of any resources that can be recreated.
-        //requests access to the user’s location.
-        
-    }
+  }
+  
 }

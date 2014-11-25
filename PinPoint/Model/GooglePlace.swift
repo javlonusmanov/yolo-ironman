@@ -11,7 +11,7 @@ import Foundation
 import CoreLocation
 
 class GooglePlace {
-  
+  var username: String
   var name: String
   var address: String
   var coordinate: CLLocationCoordinate2D
@@ -22,8 +22,9 @@ class GooglePlace {
   var personArray: [PFObject]! = []
   
   
-  init(dictionary:NSDictionary)
+  init(dictionary:NSDictionary, user: String)
   {
+    username = user as String
     name = dictionary["name"] as String
     address = dictionary["vicinity"] as String
     
@@ -122,5 +123,10 @@ class GooglePlace {
         NSLog("%@", error)
       }
     }
+  }
+  
+  func addUser() {
+    var query = PFUser.query()
+    query.whereKey("username", equalTo: username)
   }
 }
