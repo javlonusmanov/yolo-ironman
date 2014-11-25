@@ -37,7 +37,7 @@ class OverLayTransitionManager: NSObject, UIViewControllerAnimatedTransitioning,
             else {self.offStageMenuController(menuViewController)}
             }, completion: { finished in
                 transitionContext.completeTransition(true)
-                UIApplication.sharedApplication().keyWindow.addSubview(screens.to.view)
+                UIApplication.sharedApplication().keyWindow?.addSubview(screens.to.view)
         })
         
     }

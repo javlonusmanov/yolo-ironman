@@ -30,7 +30,7 @@ class GoogleDataProvider {
             placesTask.cancel()
         }
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        placesTask = session.dataTaskWithURL(NSURL(string: urlString)) {data, response, error in
+        placesTask = session.dataTaskWithURL(NSURL(string: urlString)!) {data, response, error in
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             var placesArray = [GooglePlace]()
             if let json = NSJSONSerialization.JSONObjectWithData(data, options:nil, error:nil) as? NSDictionary {
@@ -59,7 +59,7 @@ class GoogleDataProvider {
         let urlString = "https://maps.googleapis.com/maps/api/directions/json?key=\(apiKey)&origin=\(from.latitude),\(from.longitude)&destination=\(to.latitude),\(to.longitude)&mode=walking"
         
         UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        placesTask = session.dataTaskWithURL(NSURL(string: urlString)) {data, response, error in
+        placesTask = session.dataTaskWithURL(NSURL(string: urlString)!) {data, response, error in
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             var encodedRoute: String?
             if let json = NSJSONSerialization.JSONObjectWithData(data, options:nil, error:nil) as? [String:AnyObject] {
@@ -91,9 +91,9 @@ class GoogleDataProvider {
             let urlString = "https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photoreference=\(reference)&key=\(apiKey)"
             
             UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-            session.downloadTaskWithURL(NSURL(string: urlString)) {url, response, error in
+            session.downloadTaskWithURL(NSURL(string: urlString)!) {url, response, error in
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-                let downloadedPhoto = UIImage(data: NSData(contentsOfURL: url))
+                let downloadedPhoto = UIImage(data: NSData(contentsOfURL: url)!)
                 self.photoCache[reference] = downloadedPhoto
                 dispatch_async(dispatch_get_main_queue()) {
                     completion(downloadedPhoto)
