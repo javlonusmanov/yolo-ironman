@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D8AB5511A22935D009DCEC2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB54F1A22935D009DCEC2 /* UIViewExtensions.swift */; };
+		5D8AB5551A2293C1009DCEC2 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */; };
+		5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */; };
+		5D8AB55B1A2293DD009DCEC2 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5581A2293DD009DCEC2 /* ContainerViewController.swift */; };
+		5D8AB55C1A2293DD009DCEC2 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5591A2293DD009DCEC2 /* SidePanelViewController.swift */; };
+		5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */; };
+		5D8AB5651A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB55F1A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png */; };
+		5D8AB5661A229428009DCEC2 /* engineering_long_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB5601A229428009DCEC2 /* engineering_long_black.png */; };
+		5D8AB5671A229428009DCEC2 /* hamenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB5611A229428009DCEC2 /* hamenu.png */; };
+		5D8AB5681A229428009DCEC2 /* pinpoint-logo-handwritten-identity-branding-by-Utopia.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB5621A229428009DCEC2 /* pinpoint-logo-handwritten-identity-branding-by-Utopia.png */; };
+		5D8AB5691A229428009DCEC2 /* rsz_1591236-share-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB5631A229428009DCEC2 /* rsz_1591236-share-512.png */; };
+		5D8AB56A1A229428009DCEC2 /* rsz_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB5641A229428009DCEC2 /* rsz_check.png */; };
+		5D8AB5701A2294A0009DCEC2 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB56B1A2294A0009DCEC2 /* GoogleMaps.bundle */; };
+		5D8AB5711A2294A0009DCEC2 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8AB56C1A2294A0009DCEC2 /* Bolts.framework */; };
+		5D8AB5721A2294A0009DCEC2 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8AB56D1A2294A0009DCEC2 /* GoogleMaps.framework */; };
+		5D8AB5731A2294A0009DCEC2 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8AB56E1A2294A0009DCEC2 /* Parse.framework */; };
+		5D8AB5741A2294A0009DCEC2 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8AB56F1A2294A0009DCEC2 /* ParseUI.framework */; };
+		5D8AB57B1A22951C009DCEC2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB57A1A22951C009DCEC2 /* Default-568h@2x.png */; };
 		D90247531A14168C00C40766 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247521A14168C00C40766 /* AudioToolbox.framework */; };
 		D90247551A14169200C40766 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247541A14169200C40766 /* CFNetwork.framework */; };
 		D90247571A14169A00C40766 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247561A14169A00C40766 /* CoreGraphics.framework */; };
@@ -16,26 +34,13 @@
 		D902475F1A1416B300C40766 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D902475E1A1416B300C40766 /* QuartzCore.framework */; };
 		D90247611A1416BA00C40766 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247601A1416BA00C40766 /* Security.framework */; };
 		D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247641A1416CA00C40766 /* SystemConfiguration.framework */; };
-		D92C23A81A1ABAF100E15D91 /* rsz_check.png in Resources */ = {isa = PBXBuildFile; fileRef = D92C23A71A1ABAF100E15D91 /* rsz_check.png */; };
-		D92C23AE1A1AC04500E15D91 /* rsz_1591236-share-512.png in Resources */ = {isa = PBXBuildFile; fileRef = D92C23AD1A1AC04500E15D91 /* rsz_1591236-share-512.png */; };
-		D92C23B71A1AEADE00E15D91 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92C23B51A1AEADE00E15D91 /* ENSideMenu.swift */; };
-		D92C23B81A1AEADE00E15D91 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92C23B61A1AEADE00E15D91 /* ENSideMenuNavigationController.swift */; };
-		D92C23BB1A1AEBAA00E15D91 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92C23B91A1AEBAA00E15D91 /* MyNavigationController.swift */; };
-		D92C23BC1A1AEBAA00E15D91 /* MyMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92C23BA1A1AEBAA00E15D91 /* MyMenuTableViewController.swift */; };
-		D92C23C01A1AF8C800E15D91 /* hamenu.png in Resources */ = {isa = PBXBuildFile; fileRef = D92C23BF1A1AF8C800E15D91 /* hamenu.png */; };
-		D9637B7C1A13DFFB000F2D42 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9637B7B1A13DFFB000F2D42 /* Person.swift */; };
+		D93796271A23922E00570B73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93796261A23922E00570B73 /* LoginViewController.swift */; };
+		D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */; };
 		D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */; };
-		D969A61A1A13D1DF005FFAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6191A13D1DF005FFAD0 /* ViewController.swift */; };
 		D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D969A61B1A13D1DF005FFAD0 /* Main.storyboard */; };
 		D969A61F1A13D1DF005FFAD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D969A61E1A13D1DF005FFAD0 /* Images.xcassets */; };
 		D969A6221A13D1DF005FFAD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D969A6201A13D1DF005FFAD0 /* LaunchScreen.xib */; };
 		D969A62E1A13D1DF005FFAD0 /* PinPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A62D1A13D1DF005FFAD0 /* PinPointTests.swift */; };
-		D98445CE1A1E80650014698C /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98445CD1A1E80650014698C /* GoogleMaps.framework */; };
-		D98445D21A1E807D0014698C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98445CF1A1E807D0014698C /* Bolts.framework */; };
-		D98445D31A1E807D0014698C /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98445D01A1E807D0014698C /* Parse.framework */; };
-		D98445D41A1E807D0014698C /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98445D11A1E807D0014698C /* ParseUI.framework */; };
-		D9D8ADA11A14533D00798F3B /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9D8ADA01A14533D00798F3B /* GoogleMaps.bundle */; };
-		D9D8ADA61A14553D00798F3B /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8ADA51A14553D00798F3B /* GoogleDataProvider.swift */; };
 		D9D8ADA81A14562000798F3B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADA71A14562000798F3B /* AVFoundation.framework */; };
 		D9D8ADAA1A14562A00798F3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADA91A14562A00798F3B /* CoreData.framework */; };
 		D9D8ADAC1A14564300798F3B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADAB1A14564300798F3B /* CoreText.framework */; };
@@ -44,7 +49,6 @@
 		D9D8ADB21A14566200798F3B /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADB11A14566200798F3B /* libc++.dylib */; };
 		D9D8ADB41A14566E00798F3B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADB31A14566E00798F3B /* libicucore.dylib */; };
 		D9D8ADB61A14567A00798F3B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADB51A14567A00798F3B /* OpenGLES.framework */; };
-		D9D8ADB81A1457A200798F3B /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8ADB71A1457A200798F3B /* GooglePlace.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D8AB54F1A22935D009DCEC2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		5D8AB5581A2293DD009DCEC2 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		5D8AB5591A2293DD009DCEC2 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
+		5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D8AB55F1A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-city-night-life-ipad-wallpaper.png"; sourceTree = "<group>"; };
+		5D8AB5601A229428009DCEC2 /* engineering_long_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = engineering_long_black.png; sourceTree = "<group>"; };
+		5D8AB5611A229428009DCEC2 /* hamenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamenu.png; sourceTree = "<group>"; };
+		5D8AB5621A229428009DCEC2 /* pinpoint-logo-handwritten-identity-branding-by-Utopia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pinpoint-logo-handwritten-identity-branding-by-Utopia.png"; sourceTree = "<group>"; };
+		5D8AB5631A229428009DCEC2 /* rsz_1591236-share-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rsz_1591236-share-512.png"; sourceTree = "<group>"; };
+		5D8AB5641A229428009DCEC2 /* rsz_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_check.png; sourceTree = "<group>"; };
+		5D8AB56B1A2294A0009DCEC2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = PinPoint/Frameworks/GoogleMaps.bundle; sourceTree = "<group>"; };
+		5D8AB56C1A2294A0009DCEC2 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = PinPoint/Frameworks/Bolts.framework; sourceTree = "<group>"; };
+		5D8AB56D1A2294A0009DCEC2 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = PinPoint/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		5D8AB56E1A2294A0009DCEC2 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = PinPoint/Frameworks/Parse.framework; sourceTree = "<group>"; };
+		5D8AB56F1A2294A0009DCEC2 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = PinPoint/Frameworks/ParseUI.framework; sourceTree = "<group>"; };
+		5D8AB57A1A22951C009DCEC2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5D8AB57E1A229562009DCEC2 /* PinPoint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinPoint-Bridging-Header.h"; sourceTree = "<group>"; };
 		D90247521A14168C00C40766 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D90247541A14169200C40766 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D90247561A14169A00C40766 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,31 +90,16 @@
 		D902475E1A1416B300C40766 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D90247601A1416BA00C40766 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D90247641A1416CA00C40766 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D92C23A71A1ABAF100E15D91 /* rsz_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rsz_check.png; sourceTree = "<group>"; };
-		D92C23AD1A1AC04500E15D91 /* rsz_1591236-share-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rsz_1591236-share-512.png"; sourceTree = "<group>"; };
-		D92C23B51A1AEADE00E15D91 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
-		D92C23B61A1AEADE00E15D91 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
-		D92C23B91A1AEBAA00E15D91 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
-		D92C23BA1A1AEBAA00E15D91 /* MyMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMenuTableViewController.swift; sourceTree = "<group>"; };
-		D92C23BF1A1AF8C800E15D91 /* hamenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamenu.png; sourceTree = "<group>"; };
-		D9637B7B1A13DFFB000F2D42 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		D9637B7F1A13E017000F2D42 /* PinPoint-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PinPoint-Bridging-Header.h"; sourceTree = "<group>"; };
+		D93796261A23922E00570B73 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestViewController.swift; sourceTree = "<group>"; };
 		D969A6121A13D1DF005FFAD0 /* PinPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D969A6161A13D1DF005FFAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D969A6191A13D1DF005FFAD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D969A61C1A13D1DF005FFAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D969A61E1A13D1DF005FFAD0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D969A6211A13D1DF005FFAD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D969A6271A13D1DF005FFAD0 /* PinPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A62C1A13D1DF005FFAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D969A62D1A13D1DF005FFAD0 /* PinPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPointTests.swift; sourceTree = "<group>"; };
-		D98445CD1A1E80650014698C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		D98445CF1A1E807D0014698C /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		D98445D01A1E807D0014698C /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		D98445D11A1E807D0014698C /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
-		D9D8ADA01A14533D00798F3B /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleMaps.bundle; sourceTree = "<group>"; };
-		D9D8ADA51A14553D00798F3B /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		D9D8ADA71A14562000798F3B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D9D8ADA91A14562A00798F3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D9D8ADAB1A14564300798F3B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -100,7 +108,6 @@
 		D9D8ADB11A14566200798F3B /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D9D8ADB31A14566E00798F3B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		D9D8ADB51A14567A00798F3B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		D9D8ADB71A1457A200798F3B /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,24 +117,24 @@
 			files = (
 				D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */,
 				D902475F1A1416B300C40766 /* QuartzCore.framework in Frameworks */,
-				D98445D41A1E807D0014698C /* ParseUI.framework in Frameworks */,
 				D9D8ADB61A14567A00798F3B /* OpenGLES.framework in Frameworks */,
 				D9D8ADB41A14566E00798F3B /* libicucore.dylib in Frameworks */,
 				D9D8ADB21A14566200798F3B /* libc++.dylib in Frameworks */,
 				D9D8ADB01A14565500798F3B /* ImageIO.framework in Frameworks */,
+				5D8AB5711A2294A0009DCEC2 /* Bolts.framework in Frameworks */,
+				5D8AB5721A2294A0009DCEC2 /* GoogleMaps.framework in Frameworks */,
+				5D8AB5731A2294A0009DCEC2 /* Parse.framework in Frameworks */,
+				5D8AB5741A2294A0009DCEC2 /* ParseUI.framework in Frameworks */,
 				D9D8ADAE1A14564D00798F3B /* GLKit.framework in Frameworks */,
 				D9D8ADAC1A14564300798F3B /* CoreText.framework in Frameworks */,
 				D90247591A1416A100C40766 /* CoreLocation.framework in Frameworks */,
 				D9D8ADAA1A14562A00798F3B /* CoreData.framework in Frameworks */,
 				D9D8ADA81A14562000798F3B /* AVFoundation.framework in Frameworks */,
-				D98445D21A1E807D0014698C /* Bolts.framework in Frameworks */,
 				D90247611A1416BA00C40766 /* Security.framework in Frameworks */,
 				D902475D1A1416AE00C40766 /* MobileCoreServices.framework in Frameworks */,
 				D902475B1A1416A900C40766 /* libz.dylib in Frameworks */,
-				D98445CE1A1E80650014698C /* GoogleMaps.framework in Frameworks */,
 				D90247571A14169A00C40766 /* CoreGraphics.framework in Frameworks */,
 				D90247551A14169200C40766 /* CFNetwork.framework in Frameworks */,
-				D98445D31A1E807D0014698C /* Parse.framework in Frameworks */,
 				D90247531A14168C00C40766 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +149,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D8AB54D1A229303009DCEC2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AB54F1A22935D009DCEC2 /* UIViewExtensions.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5D8AB5521A2293C1009DCEC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */,
+				5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D8AB5571A2293DD009DCEC2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AB5581A2293DD009DCEC2 /* ContainerViewController.swift */,
+				5D8AB5591A2293DD009DCEC2 /* SidePanelViewController.swift */,
+				5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */,
+				D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */,
+				D93796261A23922E00570B73 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D8AB55E1A229428009DCEC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AB57A1A22951C009DCEC2 /* Default-568h@2x.png */,
+				5D8AB55F1A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png */,
+				5D8AB5601A229428009DCEC2 /* engineering_long_black.png */,
+				5D8AB5611A229428009DCEC2 /* hamenu.png */,
+				5D8AB5621A229428009DCEC2 /* pinpoint-logo-handwritten-identity-branding-by-Utopia.png */,
+				5D8AB5631A229428009DCEC2 /* rsz_1591236-share-512.png */,
+				5D8AB5641A229428009DCEC2 /* rsz_check.png */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D969A6091A13D1DE005FFAD0 = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +199,6 @@
 				D969A62A1A13D1DF005FFAD0 /* PinPointTests */,
 				D969A6131A13D1DF005FFAD0 /* Products */,
 				D9D8AD9F1A14532400798F3B /* Frameworks */,
-				D9637B7F1A13E017000F2D42 /* PinPoint-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,30 +214,17 @@
 		D969A6141A13D1DF005FFAD0 /* PinPoint */ = {
 			isa = PBXGroup;
 			children = (
-				D9D8ADA41A1454FC00798F3B /* Views */,
-				D9D8ADA31A1454F100798F3B /* Model */,
-				D9D8ADA21A1454E200798F3B /* Controllers */,
-				D9637B7B1A13DFFB000F2D42 /* Person.swift */,
-				D92C23B51A1AEADE00E15D91 /* ENSideMenu.swift */,
-				D92C23B61A1AEADE00E15D91 /* ENSideMenuNavigationController.swift */,
+				5D8AB55E1A229428009DCEC2 /* Supporting Files */,
+				5D8AB5571A2293DD009DCEC2 /* Controllers */,
+				5D8AB5521A2293C1009DCEC2 /* Model */,
+				5D8AB54D1A229303009DCEC2 /* Views */,
 				D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */,
 				D969A61B1A13D1DF005FFAD0 /* Main.storyboard */,
 				D969A61E1A13D1DF005FFAD0 /* Images.xcassets */,
 				D969A6201A13D1DF005FFAD0 /* LaunchScreen.xib */,
-				D969A6151A13D1DF005FFAD0 /* Supporting Files */,
+				5D8AB57E1A229562009DCEC2 /* PinPoint-Bridging-Header.h */,
 			);
 			path = PinPoint;
-			sourceTree = "<group>";
-		};
-		D969A6151A13D1DF005FFAD0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D92C23BF1A1AF8C800E15D91 /* hamenu.png */,
-				D92C23AD1A1AC04500E15D91 /* rsz_1591236-share-512.png */,
-				D92C23A71A1ABAF100E15D91 /* rsz_check.png */,
-				D969A6161A13D1DF005FFAD0 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D969A62A1A13D1DF005FFAD0 /* PinPointTests */ = {
@@ -211,10 +247,11 @@
 		D9D8AD9F1A14532400798F3B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D98445CF1A1E807D0014698C /* Bolts.framework */,
-				D98445D01A1E807D0014698C /* Parse.framework */,
-				D98445D11A1E807D0014698C /* ParseUI.framework */,
-				D98445CD1A1E80650014698C /* GoogleMaps.framework */,
+				5D8AB56B1A2294A0009DCEC2 /* GoogleMaps.bundle */,
+				5D8AB56C1A2294A0009DCEC2 /* Bolts.framework */,
+				5D8AB56D1A2294A0009DCEC2 /* GoogleMaps.framework */,
+				5D8AB56E1A2294A0009DCEC2 /* Parse.framework */,
+				5D8AB56F1A2294A0009DCEC2 /* ParseUI.framework */,
 				D9D8ADB51A14567A00798F3B /* OpenGLES.framework */,
 				D9D8ADB31A14566E00798F3B /* libicucore.dylib */,
 				D9D8ADB11A14566200798F3B /* libc++.dylib */,
@@ -223,7 +260,6 @@
 				D9D8ADAB1A14564300798F3B /* CoreText.framework */,
 				D9D8ADA91A14562A00798F3B /* CoreData.framework */,
 				D9D8ADA71A14562000798F3B /* AVFoundation.framework */,
-				D9D8ADA01A14533D00798F3B /* GoogleMaps.bundle */,
 				D90247641A1416CA00C40766 /* SystemConfiguration.framework */,
 				D90247601A1416BA00C40766 /* Security.framework */,
 				D902475E1A1416B300C40766 /* QuartzCore.framework */,
@@ -235,32 +271,6 @@
 				D90247521A14168C00C40766 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D9D8ADA21A1454E200798F3B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				D92C23B91A1AEBAA00E15D91 /* MyNavigationController.swift */,
-				D92C23BA1A1AEBAA00E15D91 /* MyMenuTableViewController.swift */,
-				D969A6191A13D1DF005FFAD0 /* ViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		D9D8ADA31A1454F100798F3B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D9D8ADA51A14553D00798F3B /* GoogleDataProvider.swift */,
-				D9D8ADB71A1457A200798F3B /* GooglePlace.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		D9D8ADA41A1454FC00798F3B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,13 +359,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8AB56A1A229428009DCEC2 /* rsz_check.png in Resources */,
+				5D8AB57B1A22951C009DCEC2 /* Default-568h@2x.png in Resources */,
+				5D8AB5681A229428009DCEC2 /* pinpoint-logo-handwritten-identity-branding-by-Utopia.png in Resources */,
+				5D8AB5651A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png in Resources */,
 				D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */,
+				5D8AB5691A229428009DCEC2 /* rsz_1591236-share-512.png in Resources */,
 				D969A6221A13D1DF005FFAD0 /* LaunchScreen.xib in Resources */,
-				D92C23AE1A1AC04500E15D91 /* rsz_1591236-share-512.png in Resources */,
 				D969A61F1A13D1DF005FFAD0 /* Images.xcassets in Resources */,
-				D92C23C01A1AF8C800E15D91 /* hamenu.png in Resources */,
-				D92C23A81A1ABAF100E15D91 /* rsz_check.png in Resources */,
-				D9D8ADA11A14533D00798F3B /* GoogleMaps.bundle in Resources */,
+				5D8AB5671A229428009DCEC2 /* hamenu.png in Resources */,
+				5D8AB5661A229428009DCEC2 /* engineering_long_black.png in Resources */,
+				5D8AB5701A2294A0009DCEC2 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,14 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92C23B81A1AEADE00E15D91 /* ENSideMenuNavigationController.swift in Sources */,
-				D9D8ADA61A14553D00798F3B /* GoogleDataProvider.swift in Sources */,
-				D9637B7C1A13DFFB000F2D42 /* Person.swift in Sources */,
-				D92C23BB1A1AEBAA00E15D91 /* MyNavigationController.swift in Sources */,
-				D92C23B71A1AEADE00E15D91 /* ENSideMenu.swift in Sources */,
-				D9D8ADB81A1457A200798F3B /* GooglePlace.swift in Sources */,
-				D92C23BC1A1AEBAA00E15D91 /* MyMenuTableViewController.swift in Sources */,
-				D969A61A1A13D1DF005FFAD0 /* ViewController.swift in Sources */,
+				5D8AB5551A2293C1009DCEC2 /* GoogleDataProvider.swift in Sources */,
+				5D8AB5511A22935D009DCEC2 /* UIViewExtensions.swift in Sources */,
+				D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */,
+				5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */,
+				5D8AB55C1A2293DD009DCEC2 /* SidePanelViewController.swift in Sources */,
+				5D8AB55B1A2293DD009DCEC2 /* ContainerViewController.swift in Sources */,
+				5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */,
+				D93796271A23922E00570B73 /* LoginViewController.swift in Sources */,
 				D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,13 +529,14 @@
 					"/Users/javlonusmanov/Downloads/parse-library-1",
 					"/Users/javlonusmanov/Downloads/GoogleMaps-iOS-1.9.0",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PinPoint/Frameworks",
 				);
 				INFOPLIST_FILE = PinPoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint/PinPoint-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -539,13 +554,14 @@
 					"/Users/javlonusmanov/Downloads/parse-library-1",
 					"/Users/javlonusmanov/Downloads/GoogleMaps-iOS-1.9.0",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PinPoint/Frameworks",
 				);
 				INFOPLIST_FILE = PinPoint/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PinPoint/PinPoint-Bridging-Header.h";
 			};
 			name = Release;
 		};
