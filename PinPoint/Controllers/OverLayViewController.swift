@@ -45,7 +45,12 @@ class OverLayViewController:UIViewController {
         self.notificationButton.layer.shadowOpacity = 0.8
         self.notificationButton.layer.cornerRadius = 10
     }
-    
+
+    @IBAction func logoutPressed(sender: AnyObject) {
+        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")
+        self.showViewController(vc as UIViewController, sender: vc)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

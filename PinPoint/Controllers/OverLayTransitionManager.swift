@@ -42,9 +42,25 @@ class OverLayTransitionManager: NSObject, UIViewControllerAnimatedTransitioning,
         
     }
     
-    func offStage(amount: CGFloat) -> CGAffineTransform {return CGAffineTransformMakeTranslation(amount, 0)}
-    func offStageMenuController(menuViewController: OverLayViewController){menuViewController.view.alpha = 0.0}
-    func onStageMenuController(menuViewController: OverLayViewController){menuViewController.view.alpha = 1.0}
+    func offStage(amount: CGFloat) -> CGAffineTransform {return CGAffineTransformMakeTranslation(amount, 0.6)}
+    func offStageMenuController(menuViewController: OverLayViewController){
+        menuViewController.view.alpha = 0.0
+        let topRowOffset  :CGFloat = 300
+        let middleRowOffset :CGFloat = 50
+        
+        menuViewController.settingButton.transform = self.offStage(-topRowOffset)
+        menuViewController.notificationButton.transform = self.offStage(-middleRowOffset)
+        menuViewController.logoutButton.transform = self.offStage(-middleRowOffset)
+        menuViewController.accountButton.transform = self.offStage(topRowOffset)
+
+    }
+    func onStageMenuController(menuViewController: OverLayViewController){
+        menuViewController.view.alpha = 1.0
+        menuViewController.settingButton.transform = CGAffineTransformIdentity
+        menuViewController.notificationButton.transform = CGAffineTransformIdentity
+        menuViewController.logoutButton.transform = CGAffineTransformIdentity
+        menuViewController.accountButton.transform = CGAffineTransformIdentity
+    }
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning) -> NSTimeInterval {return 0.5}
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         self.presenting = true

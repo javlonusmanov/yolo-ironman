@@ -32,6 +32,7 @@
 		D902475F1A1416B300C40766 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D902475E1A1416B300C40766 /* QuartzCore.framework */; };
 		D90247611A1416BA00C40766 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247601A1416BA00C40766 /* Security.framework */; };
 		D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247641A1416CA00C40766 /* SystemConfiguration.framework */; };
+		D929F69B1A2523C300B2897E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D929F69A1A2523C300B2897E /* SignUpViewController.swift */; };
 		D93796271A23922E00570B73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93796261A23922E00570B73 /* LoginViewController.swift */; };
 		D93BD39D1A24315900D000C1 /* OverLayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39C1A24315900D000C1 /* OverLayViewController.swift */; };
 		D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */; };
@@ -90,6 +91,7 @@
 		D902475E1A1416B300C40766 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D90247601A1416BA00C40766 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D90247641A1416CA00C40766 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D929F69A1A2523C300B2897E /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D93796261A23922E00570B73 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D93BD39C1A24315900D000C1 /* OverLayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayViewController.swift; sourceTree = "<group>"; };
 		D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayTransitionManager.swift; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 				D93796261A23922E00570B73 /* LoginViewController.swift */,
 				D93BD39C1A24315900D000C1 /* OverLayViewController.swift */,
 				D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */,
+				D929F69A1A2523C300B2897E /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				5D8AB5511A22935D009DCEC2 /* UIViewExtensions.swift in Sources */,
 				D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */,
 				5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */,
+				D929F69B1A2523C300B2897E /* SignUpViewController.swift in Sources */,
 				5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */,
 				D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */,
 				D93796271A23922E00570B73 /* LoginViewController.swift in Sources */,

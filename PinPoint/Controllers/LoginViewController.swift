@@ -13,8 +13,6 @@ class LoginViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.translucent = false
-
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,4 +22,8 @@ class LoginViewController : UIViewController {
         
     }
 
+    @IBAction func signup(sender: UIButton) {
+        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("signUpViewController")
+        self.showViewController(vc as UIViewController, sender: vc)
+    }
 }
