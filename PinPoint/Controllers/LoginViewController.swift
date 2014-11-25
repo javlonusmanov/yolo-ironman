@@ -6,12 +6,14 @@
 //  Copyright (c) 2014 Javlon Usmanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class LoginViewController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.translucent = false
+
         
     }
     

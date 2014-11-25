@@ -10,8 +10,6 @@
 		5D8AB5511A22935D009DCEC2 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB54F1A22935D009DCEC2 /* UIViewExtensions.swift */; };
 		5D8AB5551A2293C1009DCEC2 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */; };
 		5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */; };
-		5D8AB55B1A2293DD009DCEC2 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5581A2293DD009DCEC2 /* ContainerViewController.swift */; };
-		5D8AB55C1A2293DD009DCEC2 /* SidePanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5591A2293DD009DCEC2 /* SidePanelViewController.swift */; };
 		5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */; };
 		5D8AB5651A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB55F1A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png */; };
 		5D8AB5661A229428009DCEC2 /* engineering_long_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AB5601A229428009DCEC2 /* engineering_long_black.png */; };
@@ -35,12 +33,16 @@
 		D90247611A1416BA00C40766 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247601A1416BA00C40766 /* Security.framework */; };
 		D90247651A1416CA00C40766 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D90247641A1416CA00C40766 /* SystemConfiguration.framework */; };
 		D93796271A23922E00570B73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93796261A23922E00570B73 /* LoginViewController.swift */; };
+		D93BD39D1A24315900D000C1 /* OverLayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39C1A24315900D000C1 /* OverLayViewController.swift */; };
+		D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */; };
 		D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */; };
 		D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */; };
 		D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D969A61B1A13D1DF005FFAD0 /* Main.storyboard */; };
 		D969A61F1A13D1DF005FFAD0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D969A61E1A13D1DF005FFAD0 /* Images.xcassets */; };
 		D969A6221A13D1DF005FFAD0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D969A6201A13D1DF005FFAD0 /* LaunchScreen.xib */; };
 		D969A62E1A13D1DF005FFAD0 /* PinPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A62D1A13D1DF005FFAD0 /* PinPointTests.swift */; };
+		D98A12BF1A245810007992D4 /* arrow_sans_down-128.png in Resources */ = {isa = PBXBuildFile; fileRef = D98A12BE1A245810007992D4 /* arrow_sans_down-128.png */; };
+		D98A12C11A245AEB007992D4 /* point2-customer-care-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D98A12C01A245AEB007992D4 /* point2-customer-care-icon.png */; };
 		D9D8ADA81A14562000798F3B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADA71A14562000798F3B /* AVFoundation.framework */; };
 		D9D8ADAA1A14562A00798F3B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADA91A14562A00798F3B /* CoreData.framework */; };
 		D9D8ADAC1A14564300798F3B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D8ADAB1A14564300798F3B /* CoreText.framework */; };
@@ -65,8 +67,6 @@
 		5D8AB54F1A22935D009DCEC2 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
-		5D8AB5581A2293DD009DCEC2 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		5D8AB5591A2293DD009DCEC2 /* SidePanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelViewController.swift; sourceTree = "<group>"; };
 		5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D8AB55F1A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "big-city-night-life-ipad-wallpaper.png"; sourceTree = "<group>"; };
 		5D8AB5601A229428009DCEC2 /* engineering_long_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = engineering_long_black.png; sourceTree = "<group>"; };
@@ -91,6 +91,8 @@
 		D90247601A1416BA00C40766 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D90247641A1416CA00C40766 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D93796261A23922E00570B73 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D93BD39C1A24315900D000C1 /* OverLayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayViewController.swift; sourceTree = "<group>"; };
+		D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayTransitionManager.swift; sourceTree = "<group>"; };
 		D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestViewController.swift; sourceTree = "<group>"; };
 		D969A6121A13D1DF005FFAD0 /* PinPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,8 @@
 		D969A6271A13D1DF005FFAD0 /* PinPointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinPointTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A62C1A13D1DF005FFAD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D969A62D1A13D1DF005FFAD0 /* PinPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPointTests.swift; sourceTree = "<group>"; };
+		D98A12BE1A245810007992D4 /* arrow_sans_down-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_sans_down-128.png"; sourceTree = "<group>"; };
+		D98A12C01A245AEB007992D4 /* point2-customer-care-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "point2-customer-care-icon.png"; sourceTree = "<group>"; };
 		D9D8ADA71A14562000798F3B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D9D8ADA91A14562A00798F3B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D9D8ADAB1A14564300798F3B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
@@ -169,11 +173,11 @@
 		5D8AB5571A2293DD009DCEC2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5D8AB5581A2293DD009DCEC2 /* ContainerViewController.swift */,
-				5D8AB5591A2293DD009DCEC2 /* SidePanelViewController.swift */,
 				5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */,
 				D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */,
 				D93796261A23922E00570B73 /* LoginViewController.swift */,
+				D93BD39C1A24315900D000C1 /* OverLayViewController.swift */,
+				D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -181,6 +185,8 @@
 		5D8AB55E1A229428009DCEC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D98A12C01A245AEB007992D4 /* point2-customer-care-icon.png */,
+				D98A12BE1A245810007992D4 /* arrow_sans_down-128.png */,
 				5D8AB57A1A22951C009DCEC2 /* Default-568h@2x.png */,
 				5D8AB55F1A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png */,
 				5D8AB5601A229428009DCEC2 /* engineering_long_black.png */,
@@ -362,7 +368,9 @@
 				5D8AB56A1A229428009DCEC2 /* rsz_check.png in Resources */,
 				5D8AB57B1A22951C009DCEC2 /* Default-568h@2x.png in Resources */,
 				5D8AB5681A229428009DCEC2 /* pinpoint-logo-handwritten-identity-branding-by-Utopia.png in Resources */,
+				D98A12C11A245AEB007992D4 /* point2-customer-care-icon.png in Resources */,
 				5D8AB5651A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png in Resources */,
+				D98A12BF1A245810007992D4 /* arrow_sans_down-128.png in Resources */,
 				D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */,
 				5D8AB5691A229428009DCEC2 /* rsz_1591236-share-512.png in Resources */,
 				D969A6221A13D1DF005FFAD0 /* LaunchScreen.xib in Resources */,
@@ -391,11 +399,11 @@
 				5D8AB5511A22935D009DCEC2 /* UIViewExtensions.swift in Sources */,
 				D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */,
 				5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */,
-				5D8AB55C1A2293DD009DCEC2 /* SidePanelViewController.swift in Sources */,
-				5D8AB55B1A2293DD009DCEC2 /* ContainerViewController.swift in Sources */,
 				5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */,
+				D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */,
 				D93796271A23922E00570B73 /* LoginViewController.swift in Sources */,
 				D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */,
+				D93BD39D1A24315900D000C1 /* OverLayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,12 +8,6 @@
 
 import UIKit
 import QuartzCore
-@objc
-protocol ViewControllerDelegate {
-    optional func toggleLeftPanel()
-    optional func toggleRightPanel()
-    optional func collapseSidePanels()
-}
 
 class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDelegate {
     //UI variables
@@ -27,8 +21,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     //regular variables
     let locationManager = CLLocationManager()
     var maskLayer:CALayer = CALayer()
-    var delegateSideView:ViewControllerDelegate?
-    
     @IBAction func checkIn(sender: UIButton) {
         self.mapView.opaque = true
         maskLayer.frame = CGRectMake(0,0, mapView.frame.width, mapView.frame.height)
@@ -37,15 +29,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         self.showAnimate()
         
     }
-    @IBAction func sideMenuButton(sender: AnyObject) {
-        if let d = delegateSideView {
-            d.toggleLeftPanel?()
-        }
-    }
+    @IBAction func sideMenuButton(sender: UIStoryboardSegue) { self.dismissViewControllerAnimated(true, completion: nil)}
     @IBAction func closePopUp(sender: UIButton) {self.removeAnimate()}
-    @IBAction func questDropClicked(sender: UIButton) {
-        
-    }
+
     
     //when the user grants or revokes location permissions.
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -75,8 +61,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
             button.frame = CGRectMake(aaa, 0, 43, 43)
             button.layer.cornerRadius = 5
-            button.backgroundColor = UIColor.blackColor()
-            var temp: UIImage = UIImage(named: "hamenu.png")!
+            button.backgroundColor = UIColor.whiteColor()
+            var temp: UIImage = UIImage(named: "hamenu.png")
             button.setImage(temp, forState: UIControlState.Highlighted)
             button.addTarget(self, action: "pressed:", forControlEvents: UIControlEvents.TouchUpInside)
             button.alpha = 0.85
@@ -89,8 +75,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         super.viewDidLoad()
         viewSettings()
         addButton()
+        self.navigationController?.navigationBar.translucent = false
+
     }
-    
     func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
         reverseGeocodeCoordinate(position.target)
     }
@@ -147,7 +134,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
             }, completion:{(finished : Bool)  in if (finished){self.popupView.hidden = true}
         });
     }
-
+    
     
     
 }
