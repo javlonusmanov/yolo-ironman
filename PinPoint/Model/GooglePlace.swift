@@ -123,9 +123,4 @@ class GooglePlace {
       }
     }
   }
-  
-  func addPerson(person: PFObject!) {
-    personArray.append(person)
-    var query
-  }
 }
