@@ -29,7 +29,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         self.showAnimate()
         
     }
-    @IBAction func sideMenuButton(sender: UIStoryboardSegue) { self.dismissViewControllerAnimated(true, completion: nil)}
+    @IBAction func sideMenuButton(sender: UIStoryboardSegue) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        addressLabel.hidden = true
+    }
     @IBAction func closePopUp(sender: UIButton) {self.removeAnimate()}
 
     
@@ -75,7 +78,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         super.viewDidLoad()
         viewSettings()
         addButton()
-        self.navigationController?.navigationBar.translucent = false
+        // self.navigationController?.navigationBar.translucent = false
 
     }
     func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
@@ -109,7 +112,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         self.popupView.layer.shadowColor = UIColor.blackColor().CGColor
         self.popupView.layer.shadowOpacity = 0.8
         self.popupView.layer.cornerRadius = 10
-        self.popupView.hidden = true
         self.scrollButtonView.contentSize.width = 600
         self.mapView.padding = UIEdgeInsets(top: self.topLayoutGuide.length, left: 0, bottom: 112, right: 0)
         self.addressLabel.layer.cornerRadius = 5
@@ -117,9 +119,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     }
     
     func showAnimate() {
-        self.popupView.hidden = false
-        self.mapView.transform = CGAffineTransformMakeScale(1.0, 1.0)
-        UIView.animateWithDuration(0.40, animations:{
+        self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+        UIView.animateWithDuration(0.25, animations:{
             self.popupView.alpha = 1
             self.popupView.transform = CGAffineTransformMakeScale(1, 1)
         })
@@ -127,11 +128,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     }
     func removeAnimate()
     {
-        mapView.layer.mask = nil
+        self.mapView.layer.mask = nil
         UIView.animateWithDuration(0.25, animations: {
             self.popupView.transform = CGAffineTransformMakeScale(1.3, 1.3)
             self.popupView.alpha = 0.0;
-            }, completion:{(finished : Bool)  in if (finished){self.popupView.hidden = true}
+            }, completion:{(finished : Bool)  in if (finished){self.popupView.description.toInt()}
         });
     }
     

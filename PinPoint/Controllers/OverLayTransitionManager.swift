@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class OverLayTransitionManager: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate  {
     
     private var presenting = false
@@ -37,12 +38,12 @@ class OverLayTransitionManager: NSObject, UIViewControllerAnimatedTransitioning,
             else {self.offStageMenuController(menuViewController)}
             }, completion: { finished in
                 transitionContext.completeTransition(true)
-                UIApplication.sharedApplication().keyWindow?.addSubview(screens.to.view)
+                UIApplication.sharedApplication().keyWindow!.addSubview(screens.to.view)
         })
         
     }
     
-    func offStage(amount: CGFloat) -> CGAffineTransform {return CGAffineTransformMakeTranslation(amount, 0.6)}
+    func offStage(amount: CGFloat) -> CGAffineTransform {return CGAffineTransformMakeTranslation(amount, 0)}
     func offStageMenuController(menuViewController: OverLayViewController){
         menuViewController.view.alpha = 0.0
         let topRowOffset  :CGFloat = 300
