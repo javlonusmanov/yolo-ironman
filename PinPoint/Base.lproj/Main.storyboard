@@ -232,7 +232,7 @@
                                 </state>
                                 <connections>
                                     <action selector="cancelButton:" destination="Mz0-Ry-btd" eventType="touchUpInside" id="tSX-Qo-J5E"/>
-                                    <action selector="createPressed:" destination="gkf-W9-zHI" eventType="touchUpInside" id="dIh-hZ-D9S"/>
+                                    <action selector="createPressed:" destination="gkf-W9-zHI" eventType="touchUpInside" id="n7X-lv-6G6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf2-Z9-V0E">
@@ -306,7 +306,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancel" destination="PoJ-D4-3yZ" id="wI1-E2-HjY"/>
+                        <outlet property="cancelCreate" destination="WJ8-YO-wIp" id="OW0-wK-CDh"/>
+                        <outlet property="create" destination="8ou-Gu-sHK" id="2zK-gJ-QS6"/>
+                        <outlet property="email" destination="UNl-2b-wVw" id="0RG-Bv-yfi"/>
+                        <outlet property="name" destination="7UC-Eg-4fq" id="DAU-zh-0oa"/>
+                        <outlet property="password" destination="svp-jv-J8k" id="rNg-i8-VLs"/>
+                        <outlet property="passwordConfirm" destination="iMv-Kc-RmU" id="J1D-Tg-ZiF"/>
                         <outlet property="popupView" destination="YRI-Nd-aVG" id="m0N-DO-JAV"/>
+                        <outlet property="username" destination="74F-bw-L2f" id="Rho-vE-BQL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyP-ic-zLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
