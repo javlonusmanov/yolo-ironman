@@ -306,7 +306,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="email" destination="UNl-2b-wVw" id="gdu-Lz-5Iv"/>
+                        <outlet property="name" destination="7UC-Eg-4fq" id="xUh-4s-giY"/>
+                        <outlet property="password" destination="svp-jv-J8k" id="pt5-bU-JzK"/>
+                        <outlet property="passwordConfirm" destination="iMv-Kc-RmU" id="XXC-4L-TXC"/>
                         <outlet property="popupView" destination="YRI-Nd-aVG" id="m0N-DO-JAV"/>
+                        <outlet property="username" destination="74F-bw-L2f" id="7Ai-aN-QFl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VyP-ic-zLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -530,7 +535,10 @@
                     <navigationItem key="navigationItem" title="    Create Quest" id="5ia-on-Gyj"/>
                     <connections>
                         <outlet property="createQuestTitle" destination="5ia-on-Gyj" id="nHO-Yg-3km"/>
+                        <outlet property="errorMsg" destination="CB7-TA-yMS" id="dh6-uQ-Uy9"/>
                         <outlet property="popupView" destination="baO-Zb-zaC" id="JYa-SG-2BG"/>
+                        <outlet property="questDescription" destination="YHN-0u-6WH" id="YzI-hJ-ohc"/>
+                        <outlet property="questName" destination="SoL-9A-3zp" id="qKQ-LX-GBA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f40-qj-Luu" userLabel="First Responder" sceneMemberID="firstResponder"/>
