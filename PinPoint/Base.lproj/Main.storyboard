@@ -599,7 +599,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-eO-L35">
-                                        <rect key="frame" x="52.5" y="133" width="185.5" height="32"/>
+                                        <rect key="frame" x="53" y="133" width="186" height="32"/>
                                         <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="29"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
