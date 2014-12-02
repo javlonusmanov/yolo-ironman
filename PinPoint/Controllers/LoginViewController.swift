@@ -54,18 +54,16 @@ class LoginViewController : UIViewController {
             self.showAnimate()
         }
         
-//        PFUser.logInWithUsernameInBackground(user, password: pass) {
-//            (user: PFUser!, error: NSError! ) -> Void in
-//            if (user != nil ){
-//                NSLog("asasdasdasd")
-//               
-//                //let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("signUpViewController")
-//                //self.showViewController(vc as UIViewController, sender: vc)
-//
-//            } else {
-//                self.showAnimate()
-//            }
-//        }
+        PFUser.logInWithUsernameInBackground(user, password: pass) {
+            (user: PFUser!, error: NSError! ) -> Void in
+            if (user != nil ){
+                //let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("signUpViewController")
+                //self.showViewController(vc as UIViewController, sender: vc)
+
+            } else {
+                self.showAnimate()
+            }
+        }
     }
     
     @IBAction func closePopupButton(sender: UIButton) {self.removeAnimate()}

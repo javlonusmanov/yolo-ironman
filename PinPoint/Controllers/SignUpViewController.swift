@@ -43,34 +43,6 @@ class SignUpViewController:UIViewController {
   }
   
   @IBAction func createPressed(sender: UIButton) {
-    var test: String? = username.text
-    if let user: String = test {
-      var usernames: [String] = []
-      var usernameQuery = PFQuery(className: "User")
-      usernameQuery.whereKey("username", equalTo: test)
-      usernameQuery.findObjectsInBackgroundWithBlock {
-        (objects: [AnyObject]!, error: NSError!) -> Void in
-        if error != nil {
-          self.showAnimate()
-          return
-        } else {
-          usernames = objects as [String]
-        }
-      }
-    } else {
-      showAnimate()
-    }
-    
-    var emailQuery = PFQuery(className: "User")
-    emailQuery.whereKey("email", equalTo: email.text)
-    emailQuery.findObjectsInBackgroundWithBlock {
-      (objects: [AnyObject]!, error: NSError! ) -> Void in
-      if error != nil {
-        self.showAnimate()
-        return
-      }
-    }
-    
     if password.text == "" {
       self.showAnimate()
     } else if passwordConfirm.text == ""{
@@ -79,11 +51,24 @@ class SignUpViewController:UIViewController {
       self.showAnimate()
     }
     
+    var user = PFUser()
+    user["name"] = name.text
+    user.email = email.text
+    user.username = username.text
+    user.password = password.text
     
-    
-    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")
-    self.showViewController(vc as UIViewController, sender: vc)
-    
+    user.signUpInBackgroundWithBlock {
+      (succeeded: Bool!, error: NSError!) -> Void in
+      if error == nil {
+        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController")
+        self.showViewController(vc as UIViewController, sender: vc)
+      } else {
+        let errorString = error.userInfo?.values.first as NSString
+        self.errorMessageLabel.text = errorString
+        self.showAnimate()
+      }
+    }
+  
   }
   func showAnimate() {
     self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
