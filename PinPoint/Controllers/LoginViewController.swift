@@ -16,6 +16,7 @@ class LoginViewController : UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var popupView: UIView!
+    @IBOutlet var errorMessageLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

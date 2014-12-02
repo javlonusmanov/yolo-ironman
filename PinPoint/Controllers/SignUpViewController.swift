@@ -20,6 +20,7 @@ class SignUpViewController:UIViewController {
   @IBOutlet weak var cancel: UIButton!
   @IBOutlet weak var cancelCreate: UIButton!
   @IBOutlet weak var create: UIButton!
+  @IBOutlet weak var errorMessageLabel: UILabel!
   
   @IBAction func cancelPressed(sender: UIButton) {
     let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")

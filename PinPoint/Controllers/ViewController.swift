@@ -17,7 +17,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     @IBOutlet weak var checkinView: UIView!
     @IBOutlet weak var scrollButtonView: UIScrollView!
     @IBOutlet weak var addressLabel: UILabel!
-    
+    @IBOutlet weak var errorMessageLabel: UILabel!
+  
     //regular variables
     let locationManager = CLLocationManager()
     var maskLayer:CALayer = CALayer()

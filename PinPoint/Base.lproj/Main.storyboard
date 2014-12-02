@@ -157,6 +157,7 @@
                     <connections>
                         <outlet property="addressLabel" destination="8sO-FT-2bI" id="DLB-G3-l26"/>
                         <outlet property="checkinView" destination="eSO-N1-wRO" id="WJP-lE-yGT"/>
+                        <outlet property="errorMessageLabel" destination="OIq-tB-jJX" id="laZ-0A-bxe"/>
                         <outlet property="mapView" destination="ExO-cf-Ahv" id="jfg-pB-87i"/>
                         <outlet property="popupView" destination="0zB-8a-HRh" id="2P7-ur-WS9"/>
                         <outlet property="scrollButtonView" destination="0Yv-NF-5S1" id="Fr9-Pv-1ep"/>
@@ -310,6 +311,7 @@
                         <outlet property="cancelCreate" destination="WJ8-YO-wIp" id="OW0-wK-CDh"/>
                         <outlet property="create" destination="8ou-Gu-sHK" id="2zK-gJ-QS6"/>
                         <outlet property="email" destination="UNl-2b-wVw" id="0RG-Bv-yfi"/>
+                        <outlet property="errorMessageLabel" destination="r6L-ye-0St" id="VL2-iw-m0V"/>
                         <outlet property="name" destination="7UC-Eg-4fq" id="DAU-zh-0oa"/>
                         <outlet property="password" destination="svp-jv-J8k" id="rNg-i8-VLs"/>
                         <outlet property="passwordConfirm" destination="iMv-Kc-RmU" id="J1D-Tg-ZiF"/>
@@ -538,6 +540,7 @@
                     <navigationItem key="navigationItem" title="    Create Quest" id="5ia-on-Gyj"/>
                     <connections>
                         <outlet property="createQuestTitle" destination="5ia-on-Gyj" id="nHO-Yg-3km"/>
+                        <outlet property="errorMessageLabel" destination="CB7-TA-yMS" id="qEa-X7-IyT"/>
                         <outlet property="popupView" destination="baO-Zb-zaC" id="JYa-SG-2BG"/>
                     </connections>
                 </viewController>
@@ -648,6 +651,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="G3X-K3-nhU"/>
                     <connections>
+                        <outlet property="errorMessageLabel" destination="lHC-eO-L35" id="bpQ-go-kT2"/>
                         <outlet property="password" destination="jmS-tO-MpP" id="0Jo-sq-Rb4"/>
                         <outlet property="popupView" destination="9iR-cf-nkS" id="KzR-K2-qZo"/>
                         <outlet property="username" destination="0BX-5Y-Qvk" id="umn-ri-Caw"/>

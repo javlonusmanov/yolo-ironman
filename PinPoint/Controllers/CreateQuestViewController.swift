@@ -12,7 +12,8 @@ import QuartzCore
 class CreateQuestViewController : UIViewController {
     @IBOutlet weak var createQuestTitle: UINavigationItem!
     @IBOutlet var popupView: UIView!
-    
+    @IBOutlet var errorMessageLabel: UILabel!
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
