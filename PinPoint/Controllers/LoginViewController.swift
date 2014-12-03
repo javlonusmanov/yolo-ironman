@@ -35,35 +35,7 @@ class LoginViewController : UIViewController {
     }
     
     @IBAction func login(sender: UIButton) {
-        var user:String! = ""
-        var pass: String! = ""
-        if username.text != nil {user = username.text}
-        else {user = ""}
-        if password.text != nil {pass = password.text}
-        else {pass = ""}
-        NSLog("before if else")
-        if user != "" {
-            NSLog("if")
-            //whatever you do not lose the navigation bar in the main controller
-            var obj: UINavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("navigationController") as UINavigationController
-            self.navigationController?.navigationBarHidden = false
-            self.navigationController?.pushViewController(obj, animated: true)
-            self.showViewController(obj as UINavigationController, sender: obj)
-        } else {
-            NSLog("else")
-            self.showAnimate()
-        }
-        
-        PFUser.logInWithUsernameInBackground(user, password: pass) {
-            (user: PFUser!, error: NSError! ) -> Void in
-            if (user != nil ){
-                //let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("signUpViewController")
-                //self.showViewController(vc as UIViewController, sender: vc)
-
-            } else {
-                self.showAnimate()
-            }
-        }
+      
     }
     
     @IBAction func closePopupButton(sender: UIButton) {self.removeAnimate()}

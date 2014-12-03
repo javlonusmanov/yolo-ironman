@@ -60,8 +60,25 @@ class SignUpViewController:UIViewController {
     user.signUpInBackgroundWithBlock {
       (succeeded: Bool!, error: NSError!) -> Void in
       if error == nil {
-        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("ViewController")
-        self.showViewController(vc as UIViewController, sender: vc)
+        PFUser.logInWithUsernameInBackground(user.username, password: user.password) {
+          (user: PFUser!, error: NSError!) -> Void in
+          if user != nil {
+            PFUser.becomeInBackground(user.sessionToken, {
+              (user: PFUser!, error: NSError!) -> Void in
+              if error != nil {
+                let errorString = error.userInfo?.values.first as NSString
+                self.errorMessageLabel.text = errorString
+                self.showAnimate()
+              } else {
+                // Great
+              }
+            })
+          } else {
+            let errorString = error.userInfo?.values.first as NSString
+            self.errorMessageLabel.text = errorString
+            self.showAnimate()
+          }
+        }
       } else {
         let errorString = error.userInfo?.values.first as NSString
         self.errorMessageLabel.text = errorString
