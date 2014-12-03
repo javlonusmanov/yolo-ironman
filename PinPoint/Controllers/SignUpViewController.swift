@@ -70,7 +70,8 @@ class SignUpViewController:UIViewController {
                 self.errorMessageLabel.text = errorString
                 self.showAnimate()
               } else {
-                // Great
+                let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("navigationController")
+                self.showViewController(vc as UIViewController, sender: vc)
               }
             })
           } else {

@@ -35,7 +35,41 @@ class LoginViewController : UIViewController {
     }
     
     @IBAction func login(sender: UIButton) {
+      var user:String! = ""
+      var pass: String! = ""
+      if username.text != nil {user = username.text}
+      else {user = ""}
+      if password.text != nil {pass = password.text}
+      else {pass = ""}
       
+      PFUser.logInWithUsernameInBackground(user, password: pass) {
+        (user: PFUser!, error: NSError!) -> Void in
+        if user != nil {
+          PFUser.becomeInBackground(user.sessionToken, {
+            (user: PFUser!, error: NSError!) -> Void in
+            if error != nil {
+              let errorString = error.userInfo?.values.first as NSString
+              self.errorMessageLabel.text = errorString
+              self.showAnimate()
+            } else {
+              let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("navigationController")
+              self.showViewController(vc as UIViewController, sender: vc)
+            }
+          })
+        } else {
+          var errorString: String = ""
+          let errorCode = error.code as Int
+          if errorCode == 101 {
+            errorString = "Uh oh! \n Looks like your username \n or password is incorrect"
+            self.errorMessageLabel.numberOfLines = 3
+          }
+          self.errorMessageLabel.text = errorString
+          self.showAnimate()
+        }
+      }
+
+//      let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("viewController")
+//      self.showViewController(vc as UIViewController, sender: vc)
     }
     
     @IBAction func closePopupButton(sender: UIButton) {self.removeAnimate()}
