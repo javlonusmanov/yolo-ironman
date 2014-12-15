@@ -54,7 +54,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   func pressed(sender: UIButton!) {checkIn(sender)}
   
   func addLocation(sender: UIButton!) {
-    NSLog("going to addlocation view")
     var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
     let secondViewController: AnyObject! = storyboard.instantiateViewControllerWithIdentifier("locationViewController")
     self.navigationController?.pushViewController(secondViewController as UIViewController, animated: true)
@@ -133,7 +132,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
       self.popupView.alpha = 1
       self.popupView.transform = CGAffineTransformMakeScale(1, 1)
       self.blurOverlay.alpha = 0.6
-      
     })
     
   }
