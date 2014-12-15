@@ -788,6 +788,13 @@
                                             <action selector="closePopupButton:" destination="9Xl-Bc-aIN" eventType="touchUpInside" id="eVf-3j-C9I"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballot_x_u2717_icon_256x256.png" translatesAutoresizingMaskIntoConstraints="NO" id="DOw-RM-cJh">
+                                        <rect key="frame" x="71" y="25" width="130" height="130"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="130" id="56g-5Q-hMq"/>
+                                            <constraint firstAttribute="width" constant="130" id="uaq-FJ-mUZ"/>
+                                        </constraints>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CB7-TA-yMS">
                                         <rect key="frame" x="41" y="173" width="192" height="52"/>
                                         <constraints>
@@ -797,27 +804,42 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ballot_x_u2717_icon_256x256.png" translatesAutoresizingMaskIntoConstraints="NO" id="DOw-RM-cJh">
-                                        <rect key="frame" x="71" y="25" width="130" height="130"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="130" id="56g-5Q-hMq"/>
-                                            <constraint firstAttribute="width" constant="130" id="uaq-FJ-mUZ"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="CB7-TA-yMS" secondAttribute="trailing" constant="39" id="2nR-FP-eNw"/>
-                                    <constraint firstAttribute="bottom" secondItem="CB7-TA-yMS" secondAttribute="bottom" constant="134" id="7nz-t3-83q"/>
-                                    <constraint firstAttribute="bottom" secondItem="ApE-s7-9Qt" secondAttribute="bottom" constant="33" id="Blt-33-PW7"/>
-                                    <constraint firstItem="ApE-s7-9Qt" firstAttribute="top" secondItem="CB7-TA-yMS" secondAttribute="bottom" constant="71" id="DqG-Yy-o9W"/>
-                                    <constraint firstAttribute="centerX" secondItem="DOw-RM-cJh" secondAttribute="centerX" id="IBV-Gu-2eK"/>
-                                    <constraint firstItem="CB7-TA-yMS" firstAttribute="leading" secondItem="baO-Zb-zaC" secondAttribute="leading" constant="41" id="aBx-Ap-3Y1"/>
-                                    <constraint firstAttribute="centerY" secondItem="DOw-RM-cJh" secondAttribute="centerY" constant="90" id="hmk-rh-XPo"/>
-                                    <constraint firstAttribute="width" constant="272" id="iAY-I3-4QW"/>
-                                    <constraint firstItem="ApE-s7-9Qt" firstAttribute="centerX" secondItem="baO-Zb-zaC" secondAttribute="centerX" id="nBB-dG-LtX"/>
-                                    <constraint firstAttribute="height" constant="359" id="pzu-MU-FPx"/>
-                                    <constraint firstItem="ApE-s7-9Qt" firstAttribute="leading" secondItem="baO-Zb-zaC" secondAttribute="leading" constant="92" id="uFO-gP-V1F"/>
+                                    <constraint firstAttribute="trailing" secondItem="CB7-TA-yMS" secondAttribute="trailing" constant="39" id="2nR-FP-eNw">
+                                        <variation key="heightClass=compact" constant="16"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="CB7-TA-yMS" secondAttribute="bottom" constant="134" id="7nz-t3-83q">
+                                        <variation key="heightClass=compact" constant="111"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="ApE-s7-9Qt" secondAttribute="bottom" constant="33" id="Blt-33-PW7">
+                                        <variation key="heightClass=compact" constant="38"/>
+                                    </constraint>
+                                    <constraint firstItem="ApE-s7-9Qt" firstAttribute="top" secondItem="CB7-TA-yMS" secondAttribute="bottom" constant="71" id="DqG-Yy-o9W">
+                                        <variation key="heightClass=compact" constant="43"/>
+                                    </constraint>
+                                    <constraint firstAttribute="centerX" secondItem="DOw-RM-cJh" secondAttribute="centerX" id="IBV-Gu-2eK">
+                                        <variation key="heightClass=compact" constant="110"/>
+                                    </constraint>
+                                    <constraint firstItem="CB7-TA-yMS" firstAttribute="leading" secondItem="baO-Zb-zaC" secondAttribute="leading" constant="41" id="aBx-Ap-3Y1">
+                                        <variation key="heightClass=compact" constant="166"/>
+                                    </constraint>
+                                    <constraint firstAttribute="centerY" secondItem="DOw-RM-cJh" secondAttribute="centerY" constant="90" id="hmk-rh-XPo">
+                                        <variation key="heightClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="272" id="iAY-I3-4QW">
+                                        <variation key="heightClass=compact" constant="400"/>
+                                    </constraint>
+                                    <constraint firstItem="ApE-s7-9Qt" firstAttribute="centerX" secondItem="baO-Zb-zaC" secondAttribute="centerX" id="nBB-dG-LtX">
+                                        <variation key="heightClass=compact" constant="75"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="359" id="pzu-MU-FPx">
+                                        <variation key="heightClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstItem="ApE-s7-9Qt" firstAttribute="leading" secondItem="baO-Zb-zaC" secondAttribute="leading" constant="92" id="uFO-gP-V1F">
+                                        <variation key="heightClass=compact" constant="167"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="185" y="64" width="237" height="353"/>
@@ -1104,7 +1126,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oy4-dg-kbR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2052" y="1708"/>
+            <point key="canvasLocation" x="2010" y="1724"/>
         </scene>
     </scenes>
     <resources>

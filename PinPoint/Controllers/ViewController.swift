@@ -23,6 +23,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   //regular variables
   let locationManager = CLLocationManager()
   var NUMQUESTLOCATIONS = 7
+  var a:GMSMarker = GMSMarker()
+
+  
   @IBAction func checkIn(sender: UIButton) {
     self.showAnimate()
   }
@@ -97,6 +100,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   
   func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
     let geocoder = GMSGeocoder()
+    self.a.opacity = 1
+    self.a.position = coordinate
+    self.a.icon = UIImage(named: "group-map-navigation-icons-pin-13224304.png")
+    self.a.map = self.mapView
+
     geocoder.reverseGeocodeCoordinate(coordinate) { response , error in
       self.addressLabel.unlock()
       if let address = response.firstResult() {

@@ -35,6 +35,7 @@
 		D93796271A23922E00570B73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93796261A23922E00570B73 /* LoginViewController.swift */; };
 		D93BD39D1A24315900D000C1 /* OverLayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39C1A24315900D000C1 /* OverLayViewController.swift */; };
 		D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */; };
+		D953ADC91A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png in Resources */ = {isa = PBXBuildFile; fileRef = D953ADC81A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png */; };
 		D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */; };
 		D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */; };
 		D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D969A61B1A13D1DF005FFAD0 /* Main.storyboard */; };
@@ -97,6 +98,7 @@
 		D93796261A23922E00570B73 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D93BD39C1A24315900D000C1 /* OverLayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayViewController.swift; sourceTree = "<group>"; };
 		D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayTransitionManager.swift; sourceTree = "<group>"; };
+		D953ADC81A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-map-navigation-icons-pin-13224304.png"; sourceTree = "<group>"; };
 		D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestViewController.swift; sourceTree = "<group>"; };
 		D969A6121A13D1DF005FFAD0 /* PinPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		5D8AB55E1A229428009DCEC2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D953ADC81A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png */,
 				D98E3F851A3E4DC00036B46A /* ballot_x_u2717_icon_256x256.png */,
 				D98E3F811A3E4D610036B46A /* check.png */,
 				D98E3F7D1A3E14E90036B46A /* warning.png */,
@@ -379,6 +382,7 @@
 			files = (
 				5D8AB56A1A229428009DCEC2 /* rsz_check.png in Resources */,
 				5D8AB57B1A22951C009DCEC2 /* Default-568h@2x.png in Resources */,
+				D953ADC91A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png in Resources */,
 				5D8AB5681A229428009DCEC2 /* pinpoint-logo-handwritten-identity-branding-by-Utopia.png in Resources */,
 				D98A12C11A245AEB007992D4 /* point2-customer-care-icon.png in Resources */,
 				5D8AB5651A229428009DCEC2 /* big-city-night-life-ipad-wallpaper.png in Resources */,
