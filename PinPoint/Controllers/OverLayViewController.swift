@@ -9,50 +9,50 @@
 import UIKit
 
 class OverLayViewController:UIViewController {
-    // create instance of our custom transition manager
-    let transitionManager = OverLayTransitionManager()
+  // create instance of our custom transition manager
+  let transitionManager = OverLayTransitionManager()
+  
+  @IBOutlet weak var settingButton: UIButton!
+  @IBOutlet weak var accountButton: UIButton!
+  @IBOutlet weak var notificationButton: UIButton!
+  @IBOutlet weak var logoutButton: UIButton!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
+    self.transitioningDelegate = self.transitionManager
+    settings()
     
-    @IBOutlet weak var settingButton: UIButton!
-    @IBOutlet weak var accountButton: UIButton!
-    @IBOutlet weak var notificationButton: UIButton!
-    @IBOutlet weak var logoutButton: UIButton!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.transitioningDelegate = self.transitionManager
-        settings()
-        
-    }
-    @IBAction func cancelButton(sender: UIButton) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
+  }
+  @IBAction func cancelButton(sender: UIButton) {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
+  
+  func settings() {
+    self.settingButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+    self.settingButton.layer.shadowColor = UIColor.blackColor().CGColor
+    self.settingButton.layer.shadowOpacity = 0.8
+    self.settingButton.layer.cornerRadius = 10
+    self.accountButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+    self.accountButton.layer.shadowColor = UIColor.blackColor().CGColor
+    self.accountButton.layer.shadowOpacity = 0.8
+    self.accountButton.layer.cornerRadius = 10
+    self.logoutButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+    self.logoutButton.layer.shadowColor = UIColor.blackColor().CGColor
+    self.logoutButton.layer.shadowOpacity = 0.8
+    self.logoutButton.layer.cornerRadius = 10
+    self.notificationButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+    self.notificationButton.layer.shadowColor = UIColor.blackColor().CGColor
+    self.notificationButton.layer.shadowOpacity = 0.8
+    self.notificationButton.layer.cornerRadius = 10
+  }
+  
+  @IBAction func logoutPressed(sender: AnyObject) {
+    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")
+    self.showViewController(vc as UIViewController, sender: vc)
     
-    func settings() {
-        self.settingButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
-        self.settingButton.layer.shadowColor = UIColor.blackColor().CGColor
-        self.settingButton.layer.shadowOpacity = 0.8
-        self.settingButton.layer.cornerRadius = 10
-        self.accountButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
-        self.accountButton.layer.shadowColor = UIColor.blackColor().CGColor
-        self.accountButton.layer.shadowOpacity = 0.8
-        self.accountButton.layer.cornerRadius = 10
-        self.logoutButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
-        self.logoutButton.layer.shadowColor = UIColor.blackColor().CGColor
-        self.logoutButton.layer.shadowOpacity = 0.8
-        self.logoutButton.layer.cornerRadius = 10
-        self.notificationButton.layer.shadowOffset = CGSizeMake(0.2, 0.2)
-        self.notificationButton.layer.shadowColor = UIColor.blackColor().CGColor
-        self.notificationButton.layer.shadowOpacity = 0.8
-        self.notificationButton.layer.cornerRadius = 10
-    }
-
-    @IBAction func logoutPressed(sender: AnyObject) {
-        let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")
-        self.showViewController(vc as UIViewController, sender: vc)
-        
-    }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
+  }
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
+  
 }

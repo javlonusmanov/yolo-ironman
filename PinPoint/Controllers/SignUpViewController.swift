@@ -21,6 +21,7 @@ class SignUpViewController:UIViewController {
   @IBOutlet weak var cancelCreate: UIButton!
   @IBOutlet weak var create: UIButton!
   @IBOutlet weak var errorMessageLabel: UILabel!
+  @IBOutlet var blurOverlay: UIView!
   
   @IBAction func cancelPressed(sender: UIButton) {
     let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")
@@ -86,25 +87,27 @@ class SignUpViewController:UIViewController {
         self.showAnimate()
       }
     }
-  
+    
   }
   func showAnimate() {
     self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
     UIView.animateWithDuration(0.25, animations:{
       self.popupView.alpha = 1
       self.popupView.transform = CGAffineTransformMakeScale(1, 1)
-      //self.popupView.hidden = false
-      
+      self.blurOverlay.alpha = 0.6
     })
     
   }
   func removeAnimate(){
     self.view.layer.mask = nil
+    self.view.alpha = 1
     UIView.animateWithDuration(0.25, animations: {
       self.popupView.transform = CGAffineTransformMakeScale(1.3, 1.3)
       self.popupView.alpha = 0.0;
+      self.blurOverlay.alpha = 0.0
       }, completion:{(finished : Bool)  in if (finished){self.popupView.description.toInt()}
     });
+    
   }
   
   
