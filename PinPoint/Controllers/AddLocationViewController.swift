@@ -1,23 +1,25 @@
 //
-//  CreateQuestViewController.swift
+//  AddLocationViewController.swift
 //  PinPoint
 //
-//  Created by Javlon Usmanov on 11/23/14.
+//  Created by Joel Castillo on 12/15/14.
 //  Copyright (c) 2014 Javlon Usmanov. All rights reserved.
 //
 
 import Foundation
 import QuartzCore
 
-class CreateQuestViewController : UIViewController {
-  @IBOutlet weak var createQuestTitle: UINavigationItem!
-  @IBOutlet var popupView: UIView!
-  @IBOutlet var errorMessageLabel: UILabel!
-  @IBOutlet var blurOverLay: UIView!
-  @IBOutlet weak var questDesc: UITextField!
-  @IBOutlet weak var questName: UITextField!
+class AddLocationViewController : UIViewController {
+  @IBOutlet weak var name: UITextField!
+  @IBOutlet weak var addrOne: UITextField!
+  @IBOutlet weak var addrTwo: UITextField!
+  @IBOutlet weak var city: UITextField!
+  @IBOutlet weak var state: UITextField!
+  @IBOutlet weak var zip: UITextField!
+  @IBOutlet weak var addLocation: UIButton!
+  @IBOutlet weak var currentLocation: UIButton!
   
-  @IBOutlet weak var createQuest: UILabel!
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()

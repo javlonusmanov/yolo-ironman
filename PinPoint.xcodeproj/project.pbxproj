@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5AA2D71A3FBAA9008F9938 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5AA2D61A3FBAA9008F9938 /* AddLocationViewController.swift */; };
 		5D8AB5551A2293C1009DCEC2 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */; };
 		5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */; };
 		5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D5AA2D61A3FBAA9008F9938 /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		5D8AB5531A2293C1009DCEC2 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		5D8AB5541A2293C1009DCEC2 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				5D8AB55A1A2293DD009DCEC2 /* ViewController.swift */,
+				5D5AA2D61A3FBAA9008F9938 /* AddLocationViewController.swift */,
 				D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */,
 				D93796261A23922E00570B73 /* LoginViewController.swift */,
 				D93BD39C1A24315900D000C1 /* OverLayViewController.swift */,
@@ -419,6 +422,7 @@
 				5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */,
 				D929F69B1A2523C300B2897E /* SignUpViewController.swift in Sources */,
 				5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */,
+				5D5AA2D71A3FBAA9008F9938 /* AddLocationViewController.swift in Sources */,
 				D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */,
 				D98E3F881A3E5CEB0036B46A /* UIViewExtensions.swift in Sources */,
 				D93796271A23922E00570B73 /* LoginViewController.swift in Sources */,
