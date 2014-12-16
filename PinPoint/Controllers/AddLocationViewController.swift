@@ -7,15 +7,66 @@
 //
 
 import UIKit
+import Foundation
+import QuartzCore
 
 class AddLocationViewController: UIViewController {
   
   @IBOutlet weak var popupView: UIView!
   @IBOutlet weak var blurOverlay: UIView!
   @IBOutlet weak var errorMessage: UILabel!
+  @IBOutlet weak var name: UITextField!
+  @IBOutlet weak var addrOne: UITextField!
+  @IBOutlet weak var addrTwo: UITextField!
+  @IBOutlet weak var city: UITextField!
+  @IBOutlet weak var state: UITextField!
+  @IBOutlet weak var zip: UITextField!
+  
+  @IBOutlet weak var addLocationLabel: UILabel!
   
   @IBAction func addButtonPressed(sender: UIButton) {
-    self.showAnimate()
+//    if name.text == "" {
+//      self.errorMessage.text = "Please enter a name for this location"
+//      self.showAnimate()
+//    }
+//    
+//    if addrOne.text == "" {
+//      self.errorMessage.text = "Please enter an address for this location"
+//      self.showAnimate()
+//    }
+//    
+//    if city == "" {
+//      self.errorMessage.text = "Please enter a city"
+//      self.showAnimate()
+//    }
+//    
+//    if state == "" {
+//      self.errorMessage.text = "Please enter a state"
+//      self.showAnimate()
+//    }
+//    
+//    if zip == "" {
+//      self.errorMessage.text = "Please enter a zip code"
+//    }
+    
+//    var location = PFObject(className:"Location")
+//    
+//    location["name"] = name.text
+//    location["addrOne"] = addrOne.text
+//    location["addrTwo"] = addrTwo.text
+//    location["city"] = city.text
+//    location["state"] = state.text
+//    location["zip"] = zip.text
+//    
+//    location.saveInBackgroundWithTarget(nil, selector: nil)
+    
+    var quest = PFObject(className: "Quest")
+    quest["name"] = "Hell"
+    quest["description"] = "Hi"
+//    quest["owner"] = user
+    
+    quest.saveInBackgroundWithTarget(nil, selector: nil)
+    
   }
   
   @IBAction func closeButtonPressed(sender: UIButton) {
