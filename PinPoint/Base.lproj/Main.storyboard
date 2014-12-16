@@ -151,6 +151,37 @@
                                     <rect key="frame" x="253" y="159" width="294" height="342"/>
                                 </variation>
                             </view>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ier-1X-ArQ">
+                                <rect key="frame" x="30" y="3" width="540" height="250"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cIh-2a-vYd">
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="200"/>
+                                    </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Idi-8y-cp4">
+                                        <rect key="frame" x="0.0" y="210" width="540" height="30"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="21"/>
+                                        <state key="normal" title="Add Quests">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9Xl-Bc-aIN" kind="show" id="oQJ-iw-9Ag"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.95000000000000007" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="0Ir-n4-zhD"/>
+                                    <constraint firstItem="Idi-8y-cp4" firstAttribute="leading" secondItem="ier-1X-ArQ" secondAttribute="leading" id="6Hs-VW-Y3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="cIh-2a-vYd" secondAttribute="trailing" id="AzK-ch-y4N"/>
+                                    <constraint firstItem="cIh-2a-vYd" firstAttribute="leading" secondItem="ier-1X-ArQ" secondAttribute="leading" id="KWW-yW-3Cf"/>
+                                    <constraint firstItem="cIh-2a-vYd" firstAttribute="top" secondItem="ier-1X-ArQ" secondAttribute="top" id="Rrh-iQ-OBo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Idi-8y-cp4" secondAttribute="bottom" constant="10" id="UTx-CR-jaw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Idi-8y-cp4" secondAttribute="trailing" id="iYu-2s-tEO"/>
+                                    <constraint firstItem="Idi-8y-cp4" firstAttribute="top" secondItem="cIh-2a-vYd" secondAttribute="bottom" constant="10" id="jMF-gD-3pU"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -167,13 +198,16 @@
                             <constraint firstAttribute="centerY" secondItem="0zB-8a-HRh" secondAttribute="centerY" constant="44.5" id="Ly8-wP-UFn">
                                 <variation key="heightClass=compact" constant="15"/>
                             </constraint>
+                            <constraint firstItem="ier-1X-ArQ" firstAttribute="leading" secondItem="5nj-fc-ccr" secondAttribute="leading" constant="30" id="MLJ-np-GCu"/>
                             <constraint firstItem="86t-Ua-CWK" firstAttribute="top" secondItem="5nj-fc-ccr" secondAttribute="top" constant="381" id="P40-eJ-RHi"/>
+                            <constraint firstAttribute="centerX" secondItem="ier-1X-ArQ" secondAttribute="centerX" id="Qoc-RT-gJV"/>
                             <constraint firstAttribute="trailing" secondItem="8sO-FT-2bI" secondAttribute="trailing" id="VGJ-X9-Ttx"/>
                             <constraint firstItem="4Di-tj-iX6" firstAttribute="top" secondItem="eSO-N1-wRO" secondAttribute="bottom" constant="7" id="W4a-XZ-Msk"/>
                             <constraint firstItem="8sO-FT-2bI" firstAttribute="top" secondItem="oph-MR-mk5" secondAttribute="bottom" id="YtC-7F-uuu"/>
                             <constraint firstAttribute="bottom" secondItem="Fjx-CJ-rY7" secondAttribute="bottom" id="Zm6-G5-jqA"/>
                             <constraint firstItem="4Di-tj-iX6" firstAttribute="top" secondItem="ExO-cf-Ahv" secondAttribute="bottom" id="enX-MY-cL4"/>
                             <constraint firstItem="Fjx-CJ-rY7" firstAttribute="top" secondItem="5nj-fc-ccr" secondAttribute="top" id="fJy-NN-LCf"/>
+                            <constraint firstItem="ier-1X-ArQ" firstAttribute="top" secondItem="oph-MR-mk5" secondAttribute="bottom" constant="3" id="fe1-Ak-52u"/>
                             <constraint firstItem="86t-Ua-CWK" firstAttribute="leading" secondItem="5nj-fc-ccr" secondAttribute="leading" constant="5" id="hxX-Su-Ucr"/>
                             <constraint firstAttribute="trailing" secondItem="86t-Ua-CWK" secondAttribute="trailing" constant="5" id="kDM-EH-aQk"/>
                             <constraint firstAttribute="trailing" secondItem="Fjx-CJ-rY7" secondAttribute="trailing" id="sCB-Nd-vPl"/>
@@ -203,7 +237,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <segue destination="9Xl-Bc-aIN" kind="show" id="XC4-CR-qeL"/>
+                                <action selector="questsButtonClicked:" destination="lJ5-bs-5Ax" eventType="touchUpInside" id="F1F-Nz-gGu"/>
                             </connections>
                         </button>
                         <barButtonItem key="rightBarButtonItem" image="point2-customer-care-icon.png" id="cWy-qN-wgu" userLabel="assistanceRightPanel"/>
@@ -213,20 +247,22 @@
                         <outlet property="addressLabel" destination="8sO-FT-2bI" id="DLB-G3-l26"/>
                         <outlet property="blurOverlay" destination="Fjx-CJ-rY7" id="Adz-Hl-OlV"/>
                         <outlet property="checkinView" destination="eSO-N1-wRO" id="WJP-lE-yGT"/>
+                        <outlet property="dropDownMenu" destination="ier-1X-ArQ" id="nZ9-9E-Ctl"/>
                         <outlet property="errorMessageLabel" destination="OIq-tB-jJX" id="laZ-0A-bxe"/>
                         <outlet property="mapView" destination="ExO-cf-Ahv" id="jfg-pB-87i"/>
                         <outlet property="popupView" destination="0zB-8a-HRh" id="2P7-ur-WS9"/>
                         <outlet property="scrollButtonView" destination="86t-Ua-CWK" id="kbh-TD-f5e"/>
+                        <outlet property="scrollViewQuests" destination="cIh-2a-vYd" id="yz0-o8-SVf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLa-8t-yGY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2773" y="1724"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Location View Controller-->
         <scene sceneID="rL0-WE-j2I">
             <objects>
-                <viewController storyboardIdentifier="locationViewController" id="35v-d8-lgb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="locationViewController" title="Add Location View Controller" id="35v-d8-lgb" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BSq-2P-jBz"/>
                         <viewControllerLayoutGuide type="bottom" id="JhW-Jc-4ru"/>
@@ -730,7 +766,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quest name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="SoL-9A-3zp">
-                                <rect key="frame" x="181" y="93" width="238" height="35"/>
+                                <rect key="frame" x="181" y="92" width="238" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="DJa-J1-7lu"/>
@@ -740,19 +776,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add new Quest  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-tb-bGP">
-                                <rect key="frame" x="221" y="14" width="158" height="24"/>
+                                <rect key="frame" x="221" y="14" width="158" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="21"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill fields below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uL-Iq-g4S">
-                                <rect key="frame" x="217" y="46" width="168" height="19"/>
+                                <rect key="frame" x="216" y="45" width="167.5" height="19"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="YHN-0u-6WH">
-                                <rect key="frame" x="181" y="136" width="238" height="35"/>
+                                <rect key="frame" x="181" y="135" width="238" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="238" id="OsP-6v-Pk7"/>

@@ -19,21 +19,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   @IBOutlet weak var addressLabel: UILabel!
   @IBOutlet weak var errorMessageLabel: UILabel!
   @IBOutlet weak var blurOverlay: UIView!
+  @IBOutlet weak var dropDownMenu: UIView!
+  @IBOutlet weak var scrollViewQuests: UIScrollView!
   
   //regular variables
   let locationManager = CLLocationManager()
   var NUMQUESTLOCATIONS = 7
   var a:GMSMarker = GMSMarker()
 
+  @IBAction func questsButtonClicked(sender: UIButton) {
+    if (self.dropDownMenu.alpha == 0) {self.showAnimate("javlon") }
+    else {self.removeAnimate("javlon")}
+  }
   
   @IBAction func checkIn(sender: UIButton) {
-    self.showAnimate()
+    self.showAnimate("popup")
   }
   @IBAction func sideMenuButton(sender: UIStoryboardSegue) {
     self.dismissViewControllerAnimated(true, completion: nil)
     addressLabel.hidden = true
   }
-  @IBAction func closePopUp(sender: UIButton) {self.removeAnimate()}
+  @IBAction func closePopUp(sender: UIButton) {self.removeAnimate("popup")}
   
   
   //when the user grants or revokes location permissions.
@@ -87,12 +93,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     self.scrollButtonView.addSubview(addLocationButton)
   }
   
+  //add quests button 
+  func getQuestsList() {
+    var increment:CGFloat = 0.0
+    for i in 0..<NUMQUESTLOCATIONS {
+      var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
+      button.frame = CGRectMake(0, increment, self.dropDownMenu.frame.width - 10, 43)
+      button.layer.cornerRadius = 5
+      button.backgroundColor = UIColor.blackColor()
+      button.addTarget(self, action: "loadQuest:", forControlEvents: UIControlEvents.TouchUpInside)
+      button.alpha = 0.85
+      self.scrollViewQuests.addSubview(button)
+      increment = increment + 44.0
+    }
+  }
   override func viewDidLoad() {
     super.viewDidLoad()
     viewSettings()
     addButton()
     getScrollViewContentSize()
-    
+    getQuestsList()
+    self.scrollViewQuests.contentSize.height = 600
   }
   func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
     reverseGeocodeCoordinate(position.target)
@@ -131,26 +152,47 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     self.popupView.layer.cornerRadius = 10
     self.mapView.padding = UIEdgeInsets(top: self.topLayoutGuide.length, left: 0, bottom: 112, right: 0)
     self.addressLabel.layer.cornerRadius = 5
+    self.dropDownMenu.layer.shadowOffset = CGSizeMake(0.2, 0.2)
+    self.dropDownMenu.layer.shadowColor = UIColor.blackColor().CGColor
+    self.dropDownMenu.layer.shadowOpacity = 0.8
+    self.dropDownMenu.layer.cornerRadius = 10
     
   }
   
-  func showAnimate() {
-    self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
-    UIView.animateWithDuration(0.25, animations:{
-      self.popupView.alpha = 1
-      self.popupView.transform = CGAffineTransformMakeScale(1, 1)
-      self.blurOverlay.alpha = 0.6
-    })
-    
+  func showAnimate(name:String) {
+    if (name == "popup") {
+      self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+      UIView.animateWithDuration(0.25, animations:{
+        self.popupView.alpha = 1
+        self.popupView.transform = CGAffineTransformMakeScale(1, 1)
+        self.blurOverlay.alpha = 0.6
+      })
+    } else {
+      self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+      UIView.animateWithDuration(0.25, animations:{
+        self.dropDownMenu.alpha = 1
+        self.dropDownMenu.transform = CGAffineTransformMakeScale(1, 1)
+        self.blurOverlay.alpha = 0.6
+      })
+    }
   }
-  func removeAnimate()
+  func removeAnimate(name:String)
   {
+    if (name == "popup") {
     UIView.animateWithDuration(0.25, animations: {
       self.popupView.transform = CGAffineTransformMakeScale(1.3, 1.3)
       self.popupView.alpha = 0.0;
       self.blurOverlay.alpha = 0.0
       }, completion:{(finished : Bool)  in if (finished){self.popupView.description.toInt()}
     });
+    } else {
+      UIView.animateWithDuration(0.25, animations: {
+        self.dropDownMenu.transform = CGAffineTransformMakeScale(1.3, 1.3)
+        self.dropDownMenu.alpha = 0.0;
+        self.blurOverlay.alpha = 0.0
+        }, completion:{(finished : Bool)  in if (finished){self.dropDownMenu.description.toInt()}
+      });
+    }
   }
   
   func getScrollViewContentSize() {
@@ -161,6 +203,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     var ht:CGFloat = last.frame.size.height
     sizeOfContent = wd+ht
     self.scrollButtonView.contentSize = CGSizeMake(sizeOfContent, self.scrollButtonView.frame.size.height)
+    
+//    var sizeOfContents:CGFloat = 0.0
+//    var lasts:AnyObject = self.scrollViewQuests.subviews.last!
+//    var width:CGFloat = lasts.frame.origin.y
+//    var height:CGFloat = lasts.frame.size.height
+//    sizeOfContent = width+height
+//    self.scrollViewQuests.contentSize = CGSizeMake(self.scrollViewQuests.frame.size.height, sizeOfContents)
   }
   
   
