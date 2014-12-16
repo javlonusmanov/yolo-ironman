@@ -61,7 +61,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     }}
   
   //every time button in scrollview is clicked, all buttons have same characteristics except geolocation
-  func pressed(sender: UIButton!) {checkIn(sender)}
+  func pressed(sender: UIButton!) {
+    self.errorMessageLabel.text = "TODO - mapping btw quests and location"
+    self.showAnimate("popup")
+  }
   
   func addLocation(sender: UIButton!) {
     var storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -89,50 +92,52 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     addLocationButton.frame = CGRectMake(increment, 0, 43, 43)
     addLocationButton.layer.cornerRadius = 5
     addLocationButton.backgroundColor = UIColor.blackColor()
-    addLocationButton.addTarget(self, action: "addLocation:", forControlEvents:   UIControlEvents.TouchUpInside)
+    addLocationButton.addTarget(self, action: "addLocation:", forControlEvents: UIControlEvents.TouchUpInside)
     addLocationButton.alpha = 0.85
     self.scrollButtonView.addSubview(addLocationButton)
   }
-  
+  func loadQuest(sender: UIButton!) {
+    questsButtonClicked(UIButton())
+    self.errorMessageLabel.text = "TODO - loading quest after button click"
+    self.showAnimate("popup")
+  }
   //add quests button
   func getQuestsList() {
     var increment:CGFloat = 0.0
-    var quests: [PFObject] = []
+    var quests:[PFObject] = []
     var query = PFQuery(className: "Quest")
     query.whereKey("owner", equalTo: PFUser.currentUser())
     query.findObjectsInBackgroundWithBlock{
       (objects: [AnyObject]!, error: NSError!) -> Void in
       if error == nil {
         NSLog("Retrieved \(objects.count) quests")
-        self.NUMQUESTLOCATIONS = objects.count
-        for object in objects {
-          var quest: PFObject = object as PFObject
-          var name = quest["name"] as NSString
-          NSLog("\(name)")
+        for x in 0..<objects.count{
+          quests.append(objects[x] as PFObject)
+        }
+        for i in 0..<quests.count {
+          var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
+          button.frame = CGRectMake(0, increment, self.dropDownMenu.frame.width - 1, 43)
+          button.layer.cornerRadius = 5
+          button.backgroundColor = UIColor(white: 1, alpha: 0.7)
+          button.addTarget(self, action: "loadQuest:", forControlEvents: UIControlEvents.TouchUpInside)
+          button.alpha = 0.85
+          var questName:NSString = quests[i]["name"] as NSString
+          NSLog(questName)
+          button.setTitle(questName, forState: UIControlState.Normal)
+          self.scrollViewQuests.addSubview(button)
+          increment = increment + 44.0
+        }
       }
     }
-    }
     
-    for i in 0..<quests.count {
-      var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
-      button.frame = CGRectMake(0, increment, self.dropDownMenu.frame.width - 10, 43)
-      button.layer.cornerRadius = 5
-      button.backgroundColor = UIColor.blackColor()
-      button.addTarget(self, action: "loadQuest:", forControlEvents: UIControlEvents.TouchUpInside)
-      button.alpha = 0.85
-//      NSLog("\(quests[i].description)")
-      self.scrollViewQuests.addSubview(button)
-      increment = increment + 44.0
-    }
+    var test = quests.count
+    NSLog("javlon   -   \(quests.count)")
+    
+    
   }
   
-//  func loadQuest(quest: PFObject) {
-//    var locations: [PFObject] = []
-//    var query = PFQuery(className: "Quest")
-//    query.whereKeyExists("locations")
-//    query.findObjectsInBackgroundWithBlock{
-//      (objects: AnyObject)
-//  }
+
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     viewSettings()
