@@ -98,7 +98,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   func getQuestsList() {
     var increment:CGFloat = 0.0
     var quests: [PFObject] = []
-    var query = PFQuery(className: "Quests")
+    var query = PFQuery(className: "Quest")
     query.whereKey("owner", equalTo: PFUser.currentUser())
     query.findObjectsInBackgroundWithBlock{
       (objects: [AnyObject]!, error: NSError!) -> Void in
@@ -106,22 +106,33 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         NSLog("Retrieved \(objects.count) quests")
         self.NUMQUESTLOCATIONS = objects.count
         for object in objects {
-          quests.append(object as PFObject)
-        }
+          var quest: PFObject = object as PFObject
+          var name = quest["name"] as NSString
+          NSLog("\(name)")
       }
     }
-    for i in 0..<quests.count + 4 {
+    }
+    
+    for i in 0..<quests.count {
       var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
       button.frame = CGRectMake(0, increment, self.dropDownMenu.frame.width - 10, 43)
       button.layer.cornerRadius = 5
-      button.backgroundColor = UIColor.greenColor()
+      button.backgroundColor = UIColor.blackColor()
       button.addTarget(self, action: "loadQuest:", forControlEvents: UIControlEvents.TouchUpInside)
       button.alpha = 0.85
-      button.setTitle("javlon", forState: UIControlState.Normal)
+//      NSLog("\(quests[i].description)")
       self.scrollViewQuests.addSubview(button)
       increment = increment + 44.0
     }
   }
+  
+//  func loadQuest(quest: PFObject) {
+//    var locations: [PFObject] = []
+//    var query = PFQuery(className: "Quest")
+//    query.whereKeyExists("locations")
+//    query.findObjectsInBackgroundWithBlock{
+//      (objects: AnyObject)
+//  }
   override func viewDidLoad() {
     super.viewDidLoad()
     viewSettings()
@@ -130,7 +141,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     if NUMQUESTS != 0 {
       getQuestsList()
     }
-    self.scrollViewQuests.contentSize.height = 400
+    self.scrollViewQuests.contentSize.height = 600
   }
   func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
     reverseGeocodeCoordinate(position.target)
