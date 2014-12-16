@@ -99,4 +99,16 @@ class LoginViewController : UIViewController {
     });
   }
   
+  override  func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    if(self.username.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.password.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+  }
 }

@@ -102,4 +102,37 @@ class AddLocationViewController: UIViewController {
     });
   }
   
+  override  func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    if(self.name.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.addrOne.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.addrTwo.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.city.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.state.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    
+    if(self.zip.isFirstResponder()) {
+      self.view.endEditing(true)
+    }
+  }
+  
+  
 }

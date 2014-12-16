@@ -86,4 +86,18 @@ class CreateQuestViewController : UIViewController {
       }, completion:{(finished : Bool)  in if (finished){self.popupView.description.toInt()}
     });
   }
+  
+  override  func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    if(self.questDesc.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.questName.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+  }
+
 }

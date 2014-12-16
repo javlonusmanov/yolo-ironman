@@ -125,6 +125,35 @@ class SignUpViewController:UIViewController {
     
   }
   
+  override  func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    if(self.username.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.password.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.passwordConfirm.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.name.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+    if(self.email.isFirstResponder())
+    {
+      self.view.endEditing(true)
+      
+    }
+
+
+  }
   
   
 }
