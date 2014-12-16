@@ -44,11 +44,21 @@ class SignUpViewController:UIViewController {
   }
   
   @IBAction func createPressed(sender: UIButton) {
-    if password.text == "" {
+    var errorString: String
+    if password.text.utf16Count == 0 {
+      errorString = "Please enter a password"
+      self.errorMessageLabel.numberOfLines = 2
+      self.errorMessageLabel.text = errorString
       self.showAnimate()
-    } else if passwordConfirm.text == ""{
+    } else if passwordConfirm.text.utf16Count == 0 {
+      errorString = "Please confirm your password"
+      self.errorMessageLabel.numberOfLines = 2
+      self.errorMessageLabel.text = errorString
       self.showAnimate()
     } else if password.text != passwordConfirm.text {
+      errorString = "Your password confirmation doesn't match"
+      self.errorMessageLabel.numberOfLines = 2
+      self.errorMessageLabel.text = errorString
       self.showAnimate()
     }
     
@@ -67,24 +77,29 @@ class SignUpViewController:UIViewController {
             PFUser.becomeInBackground(user.sessionToken, {
               (user: PFUser!, error: NSError!) -> Void in
               if error != nil {
-                let errorString = error.userInfo?.values.first as NSString
-                self.errorMessageLabel.text = errorString
-                self.showAnimate()
               } else {
                 let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("navigationController")
                 self.showViewController(vc as UIViewController, sender: vc)
               }
             })
           } else {
-            let errorString = error.userInfo?.values.first as NSString
-            self.errorMessageLabel.text = errorString
-            self.showAnimate()
           }
         }
       } else {
-        let errorString = error.userInfo?.values.first as NSString
-        self.errorMessageLabel.text = errorString
+        var errorString: String
+        if error.code == 202 {
+          errorString = "Username has \nalready been taken"
+          self.errorMessageLabel.numberOfLines = 2
+          
+          self.errorMessageLabel.text = errorString
+        }
+        if error.code == 200 {
+          errorString = "Please enter a username"
+          
+          self.errorMessageLabel.text = errorString
+        }
         self.showAnimate()
+
       }
     }
     

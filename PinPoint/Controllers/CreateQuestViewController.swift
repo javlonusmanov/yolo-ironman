@@ -19,6 +19,7 @@ class CreateQuestViewController : UIViewController {
   
   @IBOutlet weak var createQuest: UILabel!
   
+  @IBOutlet weak var addQuest: UIButton!
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationController?.navigationBar.backgroundColor = UIColor.whiteColor()
@@ -63,7 +64,7 @@ class CreateQuestViewController : UIViewController {
     
     quest.saveInBackgroundWithTarget(nil, selector: nil)
     
-    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("navigationController")
+    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("viewController")
     self.showViewController(vc as UIViewController, sender: vc)
   }
   

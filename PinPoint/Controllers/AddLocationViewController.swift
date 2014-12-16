@@ -25,48 +25,44 @@ class AddLocationViewController: UIViewController {
   @IBOutlet weak var addLocationLabel: UILabel!
   
   @IBAction func addButtonPressed(sender: UIButton) {
-//    if name.text == "" {
-//      self.errorMessage.text = "Please enter a name for this location"
-//      self.showAnimate()
-//    }
-//    
-//    if addrOne.text == "" {
-//      self.errorMessage.text = "Please enter an address for this location"
-//      self.showAnimate()
-//    }
-//    
-//    if city == "" {
-//      self.errorMessage.text = "Please enter a city"
-//      self.showAnimate()
-//    }
-//    
-//    if state == "" {
-//      self.errorMessage.text = "Please enter a state"
-//      self.showAnimate()
-//    }
-//    
-//    if zip == "" {
-//      self.errorMessage.text = "Please enter a zip code"
-//    }
     
-//    var location = PFObject(className:"Location")
-//    
-//    location["name"] = name.text
-//    location["addrOne"] = addrOne.text
-//    location["addrTwo"] = addrTwo.text
-//    location["city"] = city.text
-//    location["state"] = state.text
-//    location["zip"] = zip.text
-//    
-//    location.saveInBackgroundWithTarget(nil, selector: nil)
+    if addrOne.text == "" {
+      self.errorMessage.text = "Please enter an address for this location"
+      self.showAnimate()
+    }
     
-    var quest = PFObject(className: "Quest")
-    quest["name"] = "Hell"
-    quest["description"] = "Hi"
-//    quest["owner"] = user
+    if name.text == "" {
+      self.errorMessage.text = "Please enter a name for this location"
+      self.showAnimate()
+    }
     
-    quest.saveInBackgroundWithTarget(nil, selector: nil)
+    if city == "" {
+      self.errorMessage.text = "Please enter a city"
+      self.showAnimate()
+    }
     
+    if state == "" {
+      self.errorMessage.text = "Please enter a state"
+      self.showAnimate()
+    }
+    
+    if zip == "" {
+      self.errorMessage.text = "Please enter a zip code"
+    }
+    
+    var location = PFObject(className:"Location")
+    
+    location["name"] = name.text
+    location["addrOne"] = addrOne.text
+    location["addrTwo"] = addrTwo.text
+    location["city"] = city.text
+    location["state"] = state.text
+    location["zip"] = zip.text
+    
+    location.saveInBackgroundWithTarget(nil, selector: nil)
+    
+    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("viewController")
+    self.showViewController(vc as UIViewController, sender: vc)
   }
   
   @IBAction func closeButtonPressed(sender: UIButton) {

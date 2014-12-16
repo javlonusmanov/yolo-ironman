@@ -482,9 +482,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addLocationLabel" destination="XTG-08-OaG" id="aqW-sG-kfA"/>
+                        <outlet property="addrOne" destination="qy4-Bi-s6O" id="VJh-2r-CuF"/>
+                        <outlet property="addrTwo" destination="dzh-i6-oi3" id="Db6-SB-PZa"/>
                         <outlet property="blurOverlay" destination="qxM-Li-oTD" id="aHb-s8-lub"/>
+                        <outlet property="city" destination="iIH-vO-RNd" id="3cW-J7-KNk"/>
                         <outlet property="errorMessage" destination="hAF-kN-XL8" id="XNu-hg-uO0"/>
+                        <outlet property="name" destination="2Xj-XG-IBp" id="lzU-pq-IvT"/>
                         <outlet property="popupView" destination="ALG-OA-dOA" id="qq2-bn-Qer"/>
+                        <outlet property="state" destination="iXh-j9-zlE" id="tdD-s1-hDo"/>
+                        <outlet property="zip" destination="dj9-AH-WHp" id="DPk-ae-q8P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVL-AF-c0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -997,7 +1004,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addQuestButton:" destination="9Xl-Bc-aIN" eventType="touchUpInside" id="TYG-3L-aFV"/>
+                                    <action selector="createPressed:" destination="9Xl-Bc-aIN" eventType="touchUpInside" id="bfd-Al-Fj0"/>
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaA-ZD-pgk" userLabel="overlay">
@@ -1108,10 +1115,14 @@
                     </view>
                     <navigationItem key="navigationItem" title="    Create Quest" id="5ia-on-Gyj"/>
                     <connections>
+                        <outlet property="addQuest" destination="o1E-hK-3da" id="tVh-rJ-BbJ"/>
                         <outlet property="blurOverLay" destination="CaA-ZD-pgk" id="JIE-tW-tgL"/>
+                        <outlet property="createQuest" destination="a4t-tb-bGP" id="crf-ix-kA5"/>
                         <outlet property="createQuestTitle" destination="5ia-on-Gyj" id="nHO-Yg-3km"/>
                         <outlet property="errorMessageLabel" destination="CB7-TA-yMS" id="qEa-X7-IyT"/>
                         <outlet property="popupView" destination="baO-Zb-zaC" id="JYa-SG-2BG"/>
+                        <outlet property="questDesc" destination="YHN-0u-6WH" id="FEf-29-vHo"/>
+                        <outlet property="questName" destination="SoL-9A-3zp" id="Ahc-9K-YzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f40-qj-Luu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1224,7 +1235,7 @@
                                             <action selector="closePopupButton:" destination="Xxg-gC-P54" eventType="touchUpInside" id="mCC-YZ-9Tu"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.70000000000000018" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-eO-L35">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.70000000000000018" translatesAutoresizingMaskIntoConstraints="NO" id="lHC-eO-L35">
                                         <rect key="frame" x="69.5" y="196" width="134.5" height="23.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="186" id="Hhf-uR-1gb"/>

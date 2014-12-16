@@ -25,6 +25,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   //regular variables
   let locationManager = CLLocationManager()
   var NUMQUESTLOCATIONS = 7
+  var NUMQUESTS = 5
   var a:GMSMarker = GMSMarker()
   
   @IBAction func questsButtonClicked(sender: UIButton) {
@@ -96,6 +97,19 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   //add quests button
   func getQuestsList() {
     var increment:CGFloat = 0.0
+    var quests: [PFObject] = []
+    var query = PFQuery(className: "Quests")
+    query.whereKey("owner", equalTo: PFUser.currentUser())
+    query.findObjectsInBackgroundWithBlock{
+      (objects: [AnyObject]!, error: NSError!) -> Void in
+      if error == nil {
+        NSLog("Retrieved \(objects.count) quests")
+        self.NUMQUESTLOCATIONS = objects.count
+        for object in objects {
+          quests.append(object as PFObject)
+        }
+      }
+    }
     for i in 0..<NUMQUESTLOCATIONS {
       var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
       button.frame = CGRectMake(0, increment, self.dropDownMenu.frame.width - 10, 43)
@@ -112,7 +126,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     viewSettings()
     addButton()
     getScrollViewContentSize()
-    getQuestsList()
+    if NUMQUESTS != 0 {
+      getQuestsList()
+    }
     self.scrollViewQuests.contentSize.height = 600
   }
   func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
