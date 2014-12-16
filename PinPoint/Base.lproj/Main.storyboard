@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="35v-d8-lgb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xxg-gC-P54">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -744,6 +744,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="settingsPressed:" destination="Mz0-Ry-btd" eventType="touchUpInside" id="hnj-CM-vbg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyK-Z2-rlh">
                                 <rect key="frame" x="135" y="350" width="150" height="100"/>
@@ -753,10 +756,13 @@
                                     <constraint firstAttribute="height" constant="100" id="VEO-bg-s55"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
-                                <state key="normal" title="Notifications">
+                                <state key="normal" title="Home">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="notificationsPressed:" destination="Mz0-Ry-btd" eventType="touchUpInside" id="aZY-cO-lE6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq4-mc-QfG">
                                 <rect key="frame" x="315" y="148" width="150" height="100"/>
@@ -771,6 +777,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="accountPressed:" destination="Mz0-Ry-btd" eventType="touchUpInside" id="3zw-lA-HQZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XB0-9p-FiD">
                                 <rect key="frame" x="315" y="350" width="150" height="100"/>
@@ -848,6 +857,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjx-CG-fLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3503" y="2050"/>
+        </scene>
+        <!--Account View Controller-->
+        <scene sceneID="Qea-LG-cBv">
+            <objects>
+                <viewController storyboardIdentifier="accountViewController" id="pJI-cn-1bj" customClass="AccountViewController" customModule="PinPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LBW-5W-O0i"/>
+                        <viewControllerLayoutGuide type="bottom" id="6A0-WZ-t0K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PYg-aP-ceA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hC-25-sB8">
+                                <rect key="frame" x="268" y="290" width="64" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGb-um-upg">
+                                <rect key="frame" x="263.5" y="320.5" width="73" height="39"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="24"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="Mz0-Ry-btd" eventType="touchUpInside" id="WXs-as-7IM"/>
+                                    <action selector="cancelClicked:" destination="pJI-cn-1bj" eventType="touchUpInside" id="MKd-h3-qRK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="eGb-um-upg" secondAttribute="centerY" constant="-40" id="LX8-H0-ni5"/>
+                            <constraint firstAttribute="centerX" secondItem="1hC-25-sB8" secondAttribute="centerX" id="QD6-u6-PYk"/>
+                            <constraint firstAttribute="centerY" secondItem="1hC-25-sB8" secondAttribute="centerY" id="dIE-20-MDc"/>
+                            <constraint firstAttribute="centerX" secondItem="eGb-um-upg" secondAttribute="centerX" id="j25-Dy-Fwf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bxe-2Y-C1z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4119" y="2050"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="n8L-uD-TuC">
+            <objects>
+                <viewController storyboardIdentifier="settingsViewController" id="Ja4-q1-ddX" customClass="SettingsViewController" customModule="PinPoint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K22-QL-46L"/>
+                        <viewControllerLayoutGuide type="bottom" id="cHo-pT-aYh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JoX-lJ-4Tq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Onh-kq-HdH">
+                                <rect key="frame" x="268" y="290" width="63" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLg-KS-HFT">
+                                <rect key="frame" x="263.5" y="320.5" width="73" height="39"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="24"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelButton:" destination="Mz0-Ry-btd" eventType="touchUpInside" id="ZCn-Z3-GtB"/>
+                                    <action selector="settingClicked:" destination="Ja4-q1-ddX" eventType="touchUpInside" id="hYt-iU-ec9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="BLg-KS-HFT" secondAttribute="centerY" constant="-40" id="FnK-Ey-ZgZ"/>
+                            <constraint firstAttribute="centerY" secondItem="Onh-kq-HdH" secondAttribute="centerY" id="Lh7-0Z-4DR"/>
+                            <constraint firstAttribute="centerX" secondItem="BLg-KS-HFT" secondAttribute="centerX" id="Yxb-iB-sU0"/>
+                            <constraint firstAttribute="centerX" secondItem="Onh-kq-HdH" secondAttribute="centerX" id="rrP-iM-pgR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCz-fH-T4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4010" y="2709"/>
         </scene>
         <!--    Create Quest-->
         <scene sceneID="g7M-bh-MqG">

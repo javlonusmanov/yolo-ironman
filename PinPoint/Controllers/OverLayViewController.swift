@@ -49,8 +49,25 @@ class OverLayViewController:UIViewController {
   @IBAction func logoutPressed(sender: AnyObject) {
     let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("loginViewController")
     self.showViewController(vc as UIViewController, sender: vc)
-    
   }
+  
+  @IBAction func settingsPressed(sender: AnyObject) {
+    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("settingsViewController")
+    self.showViewController(vc as UIViewController, sender: vc)
+
+
+  }
+  
+  @IBAction func accountPressed(sender: AnyObject) {
+    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("accountViewController")
+    self.showViewController(vc as UIViewController, sender: vc)
+  }
+  
+  @IBAction func notificationsPressed(sender: UIButton) {
+    let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("navigationController")
+    self.showViewController(vc as UIViewController, sender: vc)
+  }
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }

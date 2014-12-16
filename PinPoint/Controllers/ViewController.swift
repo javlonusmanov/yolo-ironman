@@ -26,7 +26,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   let locationManager = CLLocationManager()
   var NUMQUESTLOCATIONS = 7
   var a:GMSMarker = GMSMarker()
-
+  
   @IBAction func questsButtonClicked(sender: UIButton) {
     if (self.dropDownMenu.alpha == 0) {self.showAnimate("javlon") }
     else {self.removeAnimate("javlon")}
@@ -71,7 +71,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   //adding 10 buttons to scroll view
   func addButton() {
     var increment:CGFloat = 0.0
-        for i in 0..<NUMQUESTLOCATIONS {
+    for i in 0..<NUMQUESTLOCATIONS {
       var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
       button.frame = CGRectMake(increment, 0, 43, 43)
       button.layer.cornerRadius = 5
@@ -93,7 +93,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     self.scrollButtonView.addSubview(addLocationButton)
   }
   
-  //add quests button 
+  //add quests button
   func getQuestsList() {
     var increment:CGFloat = 0.0
     for i in 0..<NUMQUESTLOCATIONS {
@@ -121,11 +121,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   
   func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
     let geocoder = GMSGeocoder()
-    self.a.opacity = 1
     self.a.position = coordinate
-    self.a.icon = UIImage(named: "group-map-navigation-icons-pin-13224304.png")
-    self.a.map = self.mapView
-
+    
     geocoder.reverseGeocodeCoordinate(coordinate) { response , error in
       self.addressLabel.unlock()
       if let address = response.firstResult() {
@@ -143,6 +140,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   
   func viewSettings() {
     self.mapView.delegate = self
+    self.a.icon = UIImage(named: "group-map-navigation-icons-pin-13224304.png")
+    self.a.map = self.mapView
     self.checkinView.layer.cornerRadius = 10
     self.locationManager.delegate = self
     self.locationManager.requestWhenInUseAuthorization()
@@ -179,12 +178,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
   func removeAnimate(name:String)
   {
     if (name == "popup") {
-    UIView.animateWithDuration(0.25, animations: {
-      self.popupView.transform = CGAffineTransformMakeScale(1.3, 1.3)
-      self.popupView.alpha = 0.0;
-      self.blurOverlay.alpha = 0.0
-      }, completion:{(finished : Bool)  in if (finished){self.popupView.description.toInt()}
-    });
+      UIView.animateWithDuration(0.25, animations: {
+        self.popupView.transform = CGAffineTransformMakeScale(1.3, 1.3)
+        self.popupView.alpha = 0.0;
+        self.blurOverlay.alpha = 0.0
+        }, completion:{(finished : Bool)  in if (finished){self.popupView.description.toInt()}
+      });
     } else {
       UIView.animateWithDuration(0.25, animations: {
         self.dropDownMenu.transform = CGAffineTransformMakeScale(1.3, 1.3)
@@ -204,12 +203,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     sizeOfContent = wd+ht
     self.scrollButtonView.contentSize = CGSizeMake(sizeOfContent, self.scrollButtonView.frame.size.height)
     
-//    var sizeOfContents:CGFloat = 0.0
-//    var lasts:AnyObject = self.scrollViewQuests.subviews.last!
-//    var width:CGFloat = lasts.frame.origin.y
-//    var height:CGFloat = lasts.frame.size.height
-//    sizeOfContent = width+height
-//    self.scrollViewQuests.contentSize = CGSizeMake(self.scrollViewQuests.frame.size.height, sizeOfContents)
+    //    var sizeOfContents:CGFloat = 0.0
+    //    var lasts:AnyObject = self.scrollViewQuests.subviews.last!
+    //    var width:CGFloat = lasts.frame.origin.y
+    //    var height:CGFloat = lasts.frame.size.height
+    //    sizeOfContent = width+height
+    //    self.scrollViewQuests.contentSize = CGSizeMake(self.scrollViewQuests.frame.size.height, sizeOfContents)
   }
   
   
