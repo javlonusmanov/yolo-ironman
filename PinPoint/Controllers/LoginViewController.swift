@@ -68,9 +68,6 @@ class LoginViewController : UIViewController {
         self.showAnimate()
       }
     }
-    
-    //      let vc : AnyObject! = self.storyboard?.instantiateViewControllerWithIdentifier("viewController")
-    //      self.showViewController(vc as UIViewController, sender: vc)
   }
   
   @IBAction func closePopupButton(sender: UIButton) {self.removeAnimate()}

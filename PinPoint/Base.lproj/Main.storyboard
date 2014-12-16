@@ -223,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="2773" y="1724"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Location View Controller-->
         <scene sceneID="rL0-WE-j2I">
             <objects>
-                <viewController storyboardIdentifier="locationViewController" id="35v-d8-lgb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="locationViewController" id="35v-d8-lgb" customClass="AddLocationViewController" customModule="PinPoint" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BSq-2P-jBz"/>
                         <viewControllerLayoutGuide type="bottom" id="JhW-Jc-4ru"/>
@@ -235,8 +235,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="qy4-Bi-s6O">
-                                <rect key="frame" x="181" y="117" width="238" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location Name" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="qy4-Bi-s6O">
+                                <rect key="frame" x="181" y="179" width="238" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="N3j-rZ-nio"/>
@@ -245,8 +245,8 @@
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 1" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Xj-XG-IBp">
-                                <rect key="frame" x="181" y="182" width="238" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 1" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="2Xj-XG-IBp">
+                                <rect key="frame" x="181" y="244" width="238" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="O9p-O9-mgR"/>
@@ -255,8 +255,8 @@
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 2" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-i6-oi3">
-                                <rect key="frame" x="181" y="247" width="238" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address 2" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-i6-oi3">
+                                <rect key="frame" x="181" y="309" width="238" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="oHA-cq-HNV"/>
@@ -265,8 +265,8 @@
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="iIH-vO-RNd">
-                                <rect key="frame" x="181" y="312" width="238" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="iIH-vO-RNd">
+                                <rect key="frame" x="181" y="374" width="238" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="6RB-8W-UO7"/>
@@ -275,8 +275,8 @@
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="iXh-j9-zlE">
-                                <rect key="frame" x="181" y="377" width="100" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="iXh-j9-zlE">
+                                <rect key="frame" x="181" y="439" width="100" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="IE5-E2-VyR"/>
@@ -285,8 +285,8 @@
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-AH-WHp">
-                                <rect key="frame" x="297" y="377" width="122" height="35"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-AH-WHp">
+                                <rect key="frame" x="297" y="439" width="122" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="9OO-GV-360"/>
@@ -305,6 +305,13 @@
                                 <rect key="frame" x="278" y="523" width="44" height="37"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
                                 <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7N-Rf-5zT">
+                                <rect key="frame" x="148" y="116" width="304" height="30"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <state key="normal" title="Use Current Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -354,6 +361,16 @@
                             </constraint>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addLocation" destination="RO8-qU-jht" id="OTZ-Ib-3Ef"/>
+                        <outlet property="addrOne" destination="2Xj-XG-IBp" id="oYW-ke-nSw"/>
+                        <outlet property="addrTwo" destination="dzh-i6-oi3" id="zJX-hy-zot"/>
+                        <outlet property="city" destination="iIH-vO-RNd" id="IZG-NG-bs9"/>
+                        <outlet property="currentLocation" destination="l7N-Rf-5zT" id="TdB-Z6-dvi"/>
+                        <outlet property="name" destination="qy4-Bi-s6O" id="9nd-if-UUi"/>
+                        <outlet property="state" destination="iXh-j9-zlE" id="iPO-du-jfF"/>
+                        <outlet property="zip" destination="dj9-AH-WHp" id="zb6-De-vtH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QVL-AF-c0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -769,6 +786,7 @@
                                 </state>
                                 <connections>
                                     <action selector="addQuestButton:" destination="9Xl-Bc-aIN" eventType="touchUpInside" id="TYG-3L-aFV"/>
+                                    <action selector="createPressed:" destination="9Xl-Bc-aIN" eventType="touchUpInside" id="CZd-yJ-EPz"/>
                                 </connections>
                             </button>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaA-ZD-pgk" userLabel="overlay">
@@ -880,9 +898,12 @@
                     <navigationItem key="navigationItem" title="    Create Quest" id="5ia-on-Gyj"/>
                     <connections>
                         <outlet property="blurOverLay" destination="CaA-ZD-pgk" id="JIE-tW-tgL"/>
+                        <outlet property="createQuest" destination="a4t-tb-bGP" id="gZz-x4-eC8"/>
                         <outlet property="createQuestTitle" destination="5ia-on-Gyj" id="nHO-Yg-3km"/>
                         <outlet property="errorMessageLabel" destination="CB7-TA-yMS" id="qEa-X7-IyT"/>
                         <outlet property="popupView" destination="baO-Zb-zaC" id="JYa-SG-2BG"/>
+                        <outlet property="questDesc" destination="YHN-0u-6WH" id="JlP-Qk-8w3"/>
+                        <outlet property="questName" destination="SoL-9A-3zp" id="qak-9i-xxe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f40-qj-Luu" userLabel="First Responder" sceneMemberID="firstResponder"/>
