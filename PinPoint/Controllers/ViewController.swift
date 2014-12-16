@@ -110,13 +110,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
         }
       }
     }
-    for i in 0..<NUMQUESTLOCATIONS {
+    for i in 0..<quests.count + 4 {
       var button   = UIButton.buttonWithType(UIButtonType.System) as UIButton
       button.frame = CGRectMake(0, increment, self.dropDownMenu.frame.width - 10, 43)
       button.layer.cornerRadius = 5
-      button.backgroundColor = UIColor.blackColor()
+      button.backgroundColor = UIColor.greenColor()
       button.addTarget(self, action: "loadQuest:", forControlEvents: UIControlEvents.TouchUpInside)
       button.alpha = 0.85
+      button.setTitle("javlon", forState: UIControlState.Normal)
       self.scrollViewQuests.addSubview(button)
       increment = increment + 44.0
     }
@@ -129,7 +130,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, GMSMapViewDel
     if NUMQUESTS != 0 {
       getQuestsList()
     }
-    self.scrollViewQuests.contentSize.height = 600
+    self.scrollViewQuests.contentSize.height = 400
   }
   func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
     reverseGeocodeCoordinate(position.target)
