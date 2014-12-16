@@ -36,6 +36,7 @@
 		D93BD39D1A24315900D000C1 /* OverLayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39C1A24315900D000C1 /* OverLayViewController.swift */; };
 		D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */; };
 		D953ADC91A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png in Resources */ = {isa = PBXBuildFile; fileRef = D953ADC81A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png */; };
+		D953ADCB1A3FCD2D00D2BAF7 /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953ADCA1A3FCD2D00D2BAF7 /* AddLocationViewController.swift */; };
 		D961A2F31A22E5AA00B33153 /* CreateQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */; };
 		D969A6181A13D1DF005FFAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */; };
 		D969A61D1A13D1DF005FFAD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D969A61B1A13D1DF005FFAD0 /* Main.storyboard */; };
@@ -99,6 +100,7 @@
 		D93BD39C1A24315900D000C1 /* OverLayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayViewController.swift; sourceTree = "<group>"; };
 		D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverLayTransitionManager.swift; sourceTree = "<group>"; };
 		D953ADC81A3F9FF200D2BAF7 /* group-map-navigation-icons-pin-13224304.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group-map-navigation-icons-pin-13224304.png"; sourceTree = "<group>"; };
+		D953ADCA1A3FCD2D00D2BAF7 /* AddLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		D961A2F21A22E5AA00B33153 /* CreateQuestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestViewController.swift; sourceTree = "<group>"; };
 		D969A6121A13D1DF005FFAD0 /* PinPoint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinPoint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D969A6171A13D1DF005FFAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				D93BD39C1A24315900D000C1 /* OverLayViewController.swift */,
 				D93BD39E1A2431C800D000C1 /* OverLayTransitionManager.swift */,
 				D929F69A1A2523C300B2897E /* SignUpViewController.swift */,
+				D953ADCA1A3FCD2D00D2BAF7 /* AddLocationViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				5D8AB5561A2293C1009DCEC2 /* GooglePlace.swift in Sources */,
 				D929F69B1A2523C300B2897E /* SignUpViewController.swift in Sources */,
 				5D8AB55D1A2293DD009DCEC2 /* ViewController.swift in Sources */,
+				D953ADCB1A3FCD2D00D2BAF7 /* AddLocationViewController.swift in Sources */,
 				D93BD39F1A2431C800D000C1 /* OverLayTransitionManager.swift in Sources */,
 				D98E3F881A3E5CEB0036B46A /* UIViewExtensions.swift in Sources */,
 				D93796271A23922E00570B73 /* LoginViewController.swift in Sources */,
