@@ -18,10 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Parse.setApplicationId("tj53C4nWDml71zQ6EAWCGoiU8BwVbrVp8NXdnRvk", clientKey: "dtMYCLFhXQ3vU5RM5bXsiOD1Jm4P9yWO3xA6zDQc")
         GMSServices.provideAPIKey(googleMapsApiKey)
-        
-        // window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        // window!.rootViewController = ContainerViewController()
-        // window!.makeKeyAndVisible()
         return true
     }
 
@@ -46,7 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
 
 }
 

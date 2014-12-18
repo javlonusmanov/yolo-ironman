@@ -1,0 +1,62 @@
+//
+//  UIViewExtensions.swift
+//  PinPoint
+//
+//  Created by Javlon Usmanov on 11/22/14.
+//  Copyright (c) 2014 Javlon Usmanov. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+extension UIView {
+  
+  func lock() {
+    if let lockView = viewWithTag(10) {
+      //View is already locked
+    }
+    else {
+      let lockView = UIView(frame: bounds)
+      lockView.backgroundColor = UIColor(white: 0.0, alpha: 0.75)
+      lockView.tag = 10
+      lockView.alpha = 0.0
+      let activity = UIActivityIndicatorView(activityIndicatorStyle: .White)
+      activity.hidesWhenStopped = true
+      activity.center = lockView.center
+      lockView.addSubview(activity)
+      activity.startAnimating()
+      addSubview(lockView)
+      
+      UIView.animateWithDuration(0.2) {
+        lockView.alpha = 1.0
+      }
+    }
+  }
+  
+  func unlock() {
+    if let lockView = self.viewWithTag(10) {
+      UIView.animateWithDuration(0.2, animations: {
+        lockView.alpha = 0.0
+        }) { finished in
+          lockView.removeFromSuperview()
+      }
+    }
+  }
+  
+  func fadeOut(duration: NSTimeInterval) {
+    UIView.animateWithDuration(duration) {
+      self.alpha = 0.0
+    }
+  }
+  
+  func fadeIn(duration: NSTimeInterval) {
+    UIView.animateWithDuration(duration) {
+      self.alpha = 1.0
+    }
+  }
+  
+  class func viewFromNibName(name: String) -> UIView? {
+    let views = NSBundle.mainBundle().loadNibNamed(name, owner: nil, options: nil)
+    return views.first as? UIView
+  }
+}
